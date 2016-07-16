@@ -19,6 +19,10 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
     var myImageOutput : AVCaptureStillImageOutput!
     //PostRequestのインスタンス作成
     let postReq = PostRequest()
+    // ボタンを作成.
+    let myButton = UIButton(frame: CGRectMake(0,0,60,60))
+    // ボタンを作成.
+    let changeButton = UIButton(frame: CGRectMake(0,0,50,50))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,16 +57,29 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
         self.view.layer.addSublayer(myVideoLayer)
         // セッション開始.
         mySession.startRunning()
-        // UIボタンを作成.
-        let myButton = UIButton(frame: CGRectMake(0,0,120,50))
+        
         myButton.backgroundColor = UIColor.redColor();
         myButton.layer.masksToBounds = true
-        myButton.setTitle("撮影", forState: .Normal)
-        myButton.layer.cornerRadius = 20.0
+        //myButton.setTitle("撮影", forState: .Normal)
+        myButton.layer.borderColor = UIColor.whiteColor().CGColor
+        myButton.layer.borderWidth = 2
+        myButton.layer.cornerRadius = 30.0
         myButton.layer.position = CGPoint(x: self.view.bounds.width/2, y:self.view.bounds.height-50)
         myButton.addTarget(self, action: #selector(ViewController.onClickMyButton(_:)), forControlEvents: .TouchUpInside)
         // UIボタンをViewに追加.
         self.view.addSubview(myButton)
+        
+        changeButton.backgroundColor = UIColor.whiteColor();
+        changeButton.layer.masksToBounds = true
+        //myButton.setTitle("撮影", forState: .Normal)
+        changeButton.layer.borderColor = UIColor.redColor().CGColor
+        changeButton.layer.borderWidth = 2
+        changeButton.layer.cornerRadius = 25.0
+        changeButton.layer.position = CGPoint(x: self.view.bounds.width-30, y:50)
+        //changeButton.addTarget(self, action: #selector(ViewController.onClickChangeButton(_:)), forControlEvents: .TouchUpInside)
+        // UIボタンをViewに追加.
+        self.view.addSubview(changeButton)
+
     }
     
     // ボタンイベント.
