@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, NSURLSessionTaskDelegate{
+    
     // セッション.
     var mySession : AVCaptureSession!
     // デバイス.
@@ -70,8 +71,6 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
         // UIボタンをViewに追加.
         self.view.addSubview(myButton);
         
-        
-        
     }
     
     // ボタンイベント.
@@ -92,10 +91,6 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
             // アルバムに追加.
             UIImageWriteToSavedPhotosAlbum(myImage, self, nil, nil)
             
-            //POSTする画像を生成
-            let sampleImage = UIImage(named: "DummyIcon.png")
-            let imageData:NSData = NSData(data:UIImageJPEGRepresentation(sampleImage!, 1.0)!)
-            
             //NSURLRequestを生成
             let url = NSURL(string: "http://babyfuture.zayarwinttun.me/upload.php")
             let urlRequest : NSMutableURLRequest = NSMutableURLRequest()
@@ -112,11 +107,11 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
             var postData :String = String()
             let boundary:String = "---------------------------\(uniqueId)"
             
-            urlRequest.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type") //(1)
+            urlRequest.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
             
             postData += "--\(boundary)\r\n"
             
-            postData += "Content-Disposition: form-data; name=\"image\"; filename=\"images.jpg\"\r\n" //(2)
+            postData += "Content-Disposition: form-data; name=\"image\"; filename=\"images.jpg\"\r\n"
             postData += "Content-Type: image/jpeg\r\n\r\n"
             body.appendData(postData.dataUsingEncoding(NSUTF8StringEncoding)!)
             body.appendData(myImageData)
@@ -125,7 +120,7 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
             postData += "\r\n"
             postData += "\r\n--\(boundary)--\r\n"
             
-            body.appendData(postData.dataUsingEncoding(NSUTF8StringEncoding)!) //(3)
+            body.appendData(postData.dataUsingEncoding(NSUTF8StringEncoding)!)
             
             urlRequest.HTTPBody = NSData(data:body)
             //print(urlRequest)
