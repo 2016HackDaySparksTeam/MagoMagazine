@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, NSURLSessionTaskDelegate{
     // セッション.
     var mySession : AVCaptureSession!
     // デバイス.
@@ -71,10 +71,12 @@ class ViewController: UIViewController {
         self.view.addSubview(myButton);
         
         
+        
     }
     
     // ボタンイベント.
     func onClickMyButton(sender: UIButton){
+        
         // ビデオ出力に接続.
         let myVideoConnection = myImageOutput.connectionWithMediaType(AVMediaTypeVideo)
         
@@ -89,6 +91,56 @@ class ViewController: UIViewController {
             
             // アルバムに追加.
             UIImageWriteToSavedPhotosAlbum(myImage, self, nil, nil)
+            
+            //POSTする画像を生成
+            let sampleImage = UIImage(named: "DummyIcon.png")
+            let imageData:NSData = NSData(data:UIImageJPEGRepresentation(sampleImage!, 1.0)!)
+            
+            //NSURLRequestを生成
+            let url = NSURL(string: "http://babyfuture.zayarwinttun.me/upload.php")
+            let urlRequest : NSMutableURLRequest = NSMutableURLRequest()
+            
+            if let u = url{
+                urlRequest.URL = u
+                urlRequest.HTTPMethod = "POST"
+                urlRequest.timeoutInterval = 30.0
+            }
+            
+            //BODYを作成
+            let uniqueId = NSProcessInfo.processInfo().globallyUniqueString
+            let body: NSMutableData = NSMutableData()
+            var postData :String = String()
+            let boundary:String = "---------------------------\(uniqueId)"
+            
+            urlRequest.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type") //(1)
+            
+            postData += "--\(boundary)\r\n"
+            
+            postData += "Content-Disposition: form-data; name=\"image\"; filename=\"images.jpg\"\r\n" //(2)
+            postData += "Content-Type: image/jpeg\r\n\r\n"
+            body.appendData(postData.dataUsingEncoding(NSUTF8StringEncoding)!)
+            body.appendData(myImageData)
+            
+            postData = String()
+            postData += "\r\n"
+            postData += "\r\n--\(boundary)--\r\n"
+            
+            body.appendData(postData.dataUsingEncoding(NSUTF8StringEncoding)!) //(3)
+            
+            urlRequest.HTTPBody = NSData(data:body)
+            //print(urlRequest)
+            
+            //リクエストを送信してレスポンスを受け取る
+            let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+            let session = NSURLSession(configuration: config)
+            
+            let task: NSURLSessionDataTask = session.dataTaskWithRequest(urlRequest, completionHandler: { data, request, error in
+                
+                //サーバサイドから返ってきたデータ
+                let result = NSString(data: data!, encoding: NSUTF8StringEncoding)!
+                print("result=\(result)")
+            })
+            task.resume()
             
         })
     }
