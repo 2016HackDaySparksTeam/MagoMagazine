@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // セッションの作成.
         mySession = AVCaptureSession()
         // デバイス一覧の取得.
@@ -64,10 +65,12 @@ class ViewController: UIViewController {
         myButton.setTitle("撮影", forState: .Normal)
         myButton.layer.cornerRadius = 20.0
         myButton.layer.position = CGPoint(x: self.view.bounds.width/2, y:self.view.bounds.height-50)
-        myButton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
+        myButton.addTarget(self, action: #selector(ViewController.onClickMyButton(_:)), forControlEvents: .TouchUpInside)
         
         // UIボタンをViewに追加.
         self.view.addSubview(myButton);
+        
+        
     }
     
     // ボタンイベント.
@@ -86,6 +89,8 @@ class ViewController: UIViewController {
             
             // アルバムに追加.
             UIImageWriteToSavedPhotosAlbum(myImage, self, nil, nil)
+            
         })
     }
+    
 }
