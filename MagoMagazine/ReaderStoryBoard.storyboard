@@ -35,11 +35,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="121" height="161"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magazine" translatesAutoresizingMaskIntoConstraints="NO" id="34t-W6-pD0">
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby" translatesAutoresizingMaskIntoConstraints="NO" id="34t-W6-pD0">
                                                     <rect key="frame" x="8" y="8" width="105" height="145"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1M-cm-AY0">
                                                     <rect key="frame" x="8" y="28" width="105" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/11-18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7i-3X-Zv1">
+                                                    <rect key="frame" x="8" y="132" width="105" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -51,14 +57,17 @@
                                             <constraint firstItem="e1M-cm-AY0" firstAttribute="leading" secondItem="i4P-Um-MBi" secondAttribute="leadingMargin" id="1Qh-lA-jTs"/>
                                             <constraint firstItem="e1M-cm-AY0" firstAttribute="leading" secondItem="i4P-Um-MBi" secondAttribute="leadingMargin" id="AAt-gw-xgc"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="34t-W6-pD0" secondAttribute="trailing" id="EZc-25-hcE"/>
+                                            <constraint firstItem="q7i-3X-Zv1" firstAttribute="trailing" secondItem="i4P-Um-MBi" secondAttribute="trailingMargin" id="FxP-Mh-oh5"/>
                                             <constraint firstItem="34t-W6-pD0" firstAttribute="leading" secondItem="i4P-Um-MBi" secondAttribute="leadingMargin" id="IbT-38-h9S"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="34t-W6-pD0" secondAttribute="bottom" id="K7D-jE-y2L"/>
                                             <constraint firstItem="34t-W6-pD0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" id="LVf-cx-sNM"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="q7i-3X-Zv1" secondAttribute="bottom" id="Rn9-sa-rNX"/>
                                             <constraint firstItem="e1M-cm-AY0" firstAttribute="trailing" secondItem="i4P-Um-MBi" secondAttribute="trailingMargin" id="WRK-d6-CIx"/>
                                             <constraint firstItem="e1M-cm-AY0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" constant="20" id="h8i-3C-fL5"/>
                                             <constraint firstItem="e1M-cm-AY0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" constant="50" id="hFD-Tp-6LE"/>
                                             <constraint firstItem="e1M-cm-AY0" firstAttribute="trailing" secondItem="i4P-Um-MBi" secondAttribute="trailingMargin" id="j4H-Xv-iem"/>
                                             <constraint firstItem="e1M-cm-AY0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" constant="20" id="ldN-p7-ETu"/>
+                                            <constraint firstItem="q7i-3X-Zv1" firstAttribute="leading" secondItem="i4P-Um-MBi" secondAttribute="leadingMargin" id="lvT-gd-yDO"/>
                                         </constraints>
                                         <size key="customSize" width="121" height="161"/>
                                         <variation key="default">
@@ -215,7 +224,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="baby" width="384" height="512"/>
         <image name="daiza" width="2732" height="558"/>
-        <image name="magazine" width="960" height="1106"/>
+        <image name="magazine" width="768" height="1024"/>
     </resources>
 </document>

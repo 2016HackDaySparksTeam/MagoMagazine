@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Magazine View Controller-->
@@ -18,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-us-Gur">
-                                <rect key="frame" x="232" y="285" width="138" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Show Walkthrough">
+                                <rect key="frame" x="20" y="282" width="560" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="ハッピーみたい！？">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,9 +33,14 @@
                         <color key="backgroundColor" red="1" green="0.45974587751959084" blue="0.3486001789467672" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="dvT-us-Gur" secondAttribute="centerY" id="6Fh-Bc-oj2"/>
+                            <constraint firstItem="dvT-us-Gur" firstAttribute="leading" secondItem="i4p-rL-09Y" secondAttribute="leadingMargin" id="Wqz-pV-poe"/>
                             <constraint firstAttribute="centerX" secondItem="dvT-us-Gur" secondAttribute="centerX" constant="-0.5" id="dX9-Ox-Vbt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dvT-us-Gur" secondAttribute="trailing" id="j8I-Yb-fAQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleWalk" destination="dvT-us-Gur" id="PIr-PT-ZBu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQd-gd-Z6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

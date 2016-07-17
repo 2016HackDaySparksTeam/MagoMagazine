@@ -14,14 +14,14 @@ class MagazineViewController: UIViewController, BWWalkthroughViewControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBOutlet weak var titleWalk: UIButton!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
+        titleWalk.setTitle("So-Angryみたい" ,forState: .Highlighted)
         let userDefaults = NSUserDefaults.standardUserDefaults()
         
         if !userDefaults.boolForKey("walkthroughPresented") {
-            
             showWalkthrough()
             
             userDefaults.setBool(true, forKey: "walkthroughPresented")
@@ -38,6 +38,7 @@ class MagazineViewController: UIViewController, BWWalkthroughViewControllerDeleg
         return orientation
     }
 
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
