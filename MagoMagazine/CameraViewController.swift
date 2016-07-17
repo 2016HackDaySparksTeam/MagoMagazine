@@ -11,10 +11,13 @@ import AVFoundation
 
 class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     
-    // セッション.
-    var mySession : AVCaptureSession!
     // デバイス.
     var myDevice : AVCaptureDevice!
+    // セッションの作成.
+    let mySession :AVCaptureSession! = AVCaptureSession()
+    var videoInput: AVCaptureInput!
+    // デバイス一覧の取得.
+    let devices = AVCaptureDevice.devices()
     // 画像のアウトプット.
     var myImageOutput : AVCaptureStillImageOutput!
     //PostRequestのインスタンス作成
@@ -24,14 +27,13 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     // ボタンを作成.
     let changeButton = UIButton(frame: CGRectMake(0,0,50,50))
     // Reader画面への遷移用ボタンを作成
-    let nextBtn = UIButton()
+    let nextBtn = UIButton(frame: CGRectMake(0,0,60,60))
+    
+    //var judge:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // セッションの作成.
-        mySession = AVCaptureSession()
-        // デバイス一覧の取得.
-        let devices = AVCaptureDevice.devices()
+        
         // バックカメラをmyDeviceに格納.
         for device in devices{
             if(device.position == AVCaptureDevicePosition.Back){
@@ -39,14 +41,12 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
             }
         }
         // バックカメラからVideoInputを取得.
-        let videoInput: AVCaptureInput!
         if let myDevice = myDevice  {
             do {
                 videoInput = try AVCaptureDeviceInput.init(device: myDevice)
             }catch{
                 videoInput = nil
             }
-            
             // セッションに追加.
             mySession.addInput(videoInput)
             // 出力先を生成.
@@ -55,7 +55,7 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
             mySession.addOutput(myImageOutput)
             // 画像を表示するレイヤーを生成.
             let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.init(session:mySession)
-            myVideoLayer.frame = self.view.bounds
+            myVideoLayer.frame = CGRectMake(0,0,self.view.bounds.size.width,self.view.bounds.size.height-100)
             myVideoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
             // Viewに追加.
             self.view.layer.addSublayer(myVideoLayer)
@@ -64,9 +64,7 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
         }
         
         myButton.backgroundColor = UIColor.redColor();
-        myButton.layer.masksToBounds = true
-        //myButton.setTitle("撮影", forState: .Normal)
-        myButton.layer.borderColor = UIColor.whiteColor().CGColor
+        myButton.layer.borderColor = UIColor.blackColor().CGColor
         myButton.layer.borderWidth = 2
         myButton.layer.cornerRadius = 30.0
         myButton.layer.position = CGPoint(x: self.view.bounds.width/2, y:self.view.bounds.height-50)
@@ -75,15 +73,20 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
         self.view.addSubview(myButton)
         
         changeButton.backgroundColor = UIColor.whiteColor();
-        changeButton.layer.masksToBounds = true
-        //myButton.setTitle("撮影", forState: .Normal)
         changeButton.layer.borderColor = UIColor.redColor().CGColor
         changeButton.layer.borderWidth = 2
         changeButton.layer.cornerRadius = 25.0
         changeButton.layer.position = CGPoint(x: self.view.bounds.width-30, y:50)
-        //changeButton.addTarget(self, action: #selector(ViewController.onClickChangeButton(_:)), forControlEvents: .TouchUpInside)
+        changeButton.addTarget(self, action: #selector(CameraViewController.onClickChangeButton(_:)), forControlEvents: .TouchUpInside)
         // UIボタンをViewに追加.
         self.view.addSubview(changeButton)
+        
+        nextBtn.backgroundColor = UIColor.blueColor();
+        nextBtn.layer.position = CGPoint(x: self.view.bounds.width-50, y:self.view.bounds.height-50)
+        nextBtn.addTarget(self, action: #selector(CameraViewController.onChangeViewButton(_:)), forControlEvents: .TouchUpInside)
+        // UIボタンをViewに追加.
+        self.view.addSubview(nextBtn)
+        
     }
     
     // ボタンイベント.
@@ -100,5 +103,18 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
             UIImageWriteToSavedPhotosAlbum(myImage, self, nil, nil)
             PostRequest().postRequest(myImageData)
         })
+    }
+    
+    func onClickChangeButton(sender: UIButton) {
+        
+    }
+    
+    func onChangeViewButton(sender: UIButton) {
+        let next = MagazineCollectionViewController()
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 }
