@@ -61,8 +61,8 @@ class ReadJsonData {
         //            print("error")
         //        }
         
-        /*
-        let URL = NSURL(string: url)
+        
+        let URL = NSURL(string: "http://" + url)
         let req = NSURLRequest(URL: URL!)
         
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
@@ -71,7 +71,7 @@ class ReadJsonData {
         let task = session.dataTaskWithRequest(req, completionHandler: {
             (data, response, error) -> Void in
             do {
-                
+                print(data)
                 let json = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSDictionary
                 
                 let response:NSDictionary = json.objectForKey("cover") as! NSDictionary
@@ -86,7 +86,7 @@ class ReadJsonData {
             
         })
         task.resume()
-        */
+        
     }
     
 }
