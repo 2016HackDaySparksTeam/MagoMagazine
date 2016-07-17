@@ -10,33 +10,9 @@ import Foundation
 
 class ReadJsonData {
     
+    let book :[Book] = []
+    
     func readJson(){
-       /*
-        var urlString = "http://babyfuture.zayarwinttun.me/getURL.php"
-        var url = NSURL(string: urlString)
-        //
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: config)
-        let urlRequest : NSMutableURLRequest = NSMutableURLRequest()
-        //download by NSSession
-        //var task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler:{data, response, error in
-            //convert json data to dictionary
-//            var dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
-//            
-//            print(dict)
-           /// print(response!)
-       // })
-        
-      //  task.resume()
-        
-        let task: NSURLSessionDataTask = session.dataTaskWithRequest(urlRequest, completionHandler: { data, request, error in
-            //サーバサイドから返ってきたデータ
-            let result = NSString(data: data!, encoding: NSUTF8StringEncoding)!
-            print("result=\(result)")
-        })
-        task.resume()
-        */
-        
         
         let url = NSURL(string: "http://babyfuture.zayarwinttun.me/getURL.php")
         let jsonUrlData: NSData
@@ -54,16 +30,75 @@ class ReadJsonData {
             for i in 0..<result2.count - 1 {
                 let jsonFile = result2[i]
                 print(jsonFile)
+                //book[i]
+                //getJson(jsonFile)
             }
             
+            print("----------------------")
+            
             //（下記）仮に、1.jsonだけからパースして取ってくる
+            print(result2[0])
+            print("----------------------")
+            getJson(result2[0])
             
             
             
         } catch {
             print("Error: can't create image.")
         }
+    }
+    
+    
+    func getJson(url:String) {
         
+        let URL = NSURL(string: "http://" + url)
+        let req = NSURLRequest(URL: URL!)
+        
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: configuration, delegate:nil, delegateQueue:NSOperationQueue.mainQueue())
+        
+        let task = session.dataTaskWithRequest(req, completionHandler: {
+            (data, response, error) -> Void in
+            do {
+                //print(data)
+                let json = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSDictionary
+                //cover
+                let coverResponse:NSDictionary = json.objectForKey("cover") as! NSDictionary
+                let response:NSDictionary = coverResponse.objectForKey("number") as! NSDictionary
+                print(response.objectForKey("year")!)
+                print(response.objectForKey("month")!)
+                print(response.objectForKey("week")!)
+                print(coverResponse.objectForKey("title") as! NSString)
+                print(coverResponse.objectForKey("image") as! NSString)
+                print(coverResponse.objectForKey("color") as! NSString)
+                //summary
+                let summaryResponse:NSDictionary = json.objectForKey("summary") as! NSDictionary
+                print(summaryResponse.objectForKey("title") as! NSString)
+                print(summaryResponse.objectForKey("joy") as! NSString)
+                print(summaryResponse.objectForKey("sorrow") as! NSString)
+                print(summaryResponse.objectForKey("anger") as! NSString)
+                print(summaryResponse.objectForKey("surprise") as! NSString)
+                //contents
+                let contentsResponse:NSArray = json.objectForKey("contents") as! NSArray
+                for i in 0..<contentsResponse.count {
+                    print(contentsResponse[i]["text"] as! String)
+                    print(contentsResponse[i]["templateNo"] as! Int)
+                    let response2:NSArray = contentsResponse[i]["images"] as! NSArray
+                    for i in 0..<response2.count {
+                        print(response2[i]["url"] as! String)
+                        print(response2[i]["caption"] as! String)
+                    }
+                }
+                
+            } catch {
+                
+                //エラー処理
+                
+            }
+            
+        })
+        task.resume()
         
     }
+    
 }
