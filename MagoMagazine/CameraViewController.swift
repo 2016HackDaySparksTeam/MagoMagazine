@@ -29,7 +29,8 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     // Reader画面への遷移用ボタンを作成
     let nextBtn = UIButton(frame: CGRectMake(0,0,60,60))
     
-    //var judge:Bool = true
+    let image:UIImage = UIImage(named:"head.png")!
+    let imageview = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,10 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
             // セッション開始.
             mySession.startRunning()
         }
+        
+        imageview.image = image
+        imageview.frame = CGRectMake(0, 0, self.view.bounds.width, 35)
+        self.view.addSubview(imageview)
         
         myButton.backgroundColor = UIColor.redColor();
         myButton.layer.borderColor = UIColor.blackColor().CGColor
