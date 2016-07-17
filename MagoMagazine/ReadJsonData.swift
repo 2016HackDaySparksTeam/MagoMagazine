@@ -10,6 +10,8 @@ import Foundation
 
 class ReadJsonData {
     
+    let book :[Book] = []
+    
     func readJson(){
         
         let url = NSURL(string: "http://babyfuture.zayarwinttun.me/getURL.php")
@@ -28,6 +30,8 @@ class ReadJsonData {
             for i in 0..<result2.count - 1 {
                 let jsonFile = result2[i]
                 print(jsonFile)
+                //book[i]
+                //getJson(jsonFile)
             }
             
             print("----------------------")
@@ -73,7 +77,7 @@ class ReadJsonData {
                 print(summaryResponse.objectForKey("joy") as! NSString)
                 print(summaryResponse.objectForKey("sorrow") as! NSString)
                 print(summaryResponse.objectForKey("anger") as! NSString)
-                /////print(summaryResponse.objectForKey("surprise") as! NSString)
+                print(summaryResponse.objectForKey("surprise") as! NSString)
                 //contents
                 let contentsResponse:NSArray = json.objectForKey("contents") as! NSArray
                 for i in 0..<contentsResponse.count {
