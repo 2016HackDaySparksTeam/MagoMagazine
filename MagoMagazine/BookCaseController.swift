@@ -9,16 +9,17 @@
 import Foundation
 import UIKit
 class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollectionViewDataSource, UICollectionViewDelegate{
-    @IBOutlet weak var collectionView: UICollectionView!
     var bookWidth :CGFloat = 200.0
     let lineBooks = 4
-    let magazines = ["magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine"]
+    let magazines = ["magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine"]
     
+    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidAppear(animated: Bool) {
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        addDaiza(100, y: 100)
+        let image :UIImage = UIImage(named: "daiza")!
+        collectionView.backgroundColor = UIColor(patternImage: image)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,8 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let cellSize:CGFloat = self.view.frame.size.width/CGFloat(lineBooks)
-        return CGSizeMake(bookWidth, bookWidth*1.5)
+        let cellSize:CGFloat = self.view.frame.size.width/CGFloat(lineBooks) - 100
+        return CGSizeMake(bookWidth, bookWidth*1.3)
     }
     
     
@@ -51,22 +52,15 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
     
     /// アイテムごとのマージン
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, maxLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        
-        return 100.0
+        print ("mergin")
+        return 0.0
         
     }
     
     /// 行ごとのマージン
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, maxInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 10.0
+        return 0.0
         
-    }
-    
-    func addDaiza(x: CGFloat, y: CGFloat){
-        let imageDaiza = UIImageView(frame:CGRectMake(0,0,1024,768))
-        imageDaiza.image = UIImage(named: "daiza")
-        self.view.addSubview(imageDaiza)
-        //self.view.bringSubviewToFront(imageDaiza)
     }
     
     override func didReceiveMemoryWarning() {

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		173BD4381D3B4F6F00C0B8CC /* BookCaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BD4371D3B4F6F00C0B8CC /* BookCaseController.swift */; };
 		173BD43A1D3B4F8100C0B8CC /* ReaderStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173BD4391D3B4F8100C0B8CC /* ReaderStoryBoard.storyboard */; };
+		173BD43C1D3B5D6900C0B8CC /* CaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BD43B1D3B5D6900C0B8CC /* CaseController.swift */; };
+		173BD43E1D3B5F8100C0B8CC /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BD43D1D3B5F8100C0B8CC /* CustomCell.swift */; };
+		173BD4401D3B61D900C0B8CC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BD43F1D3B61D900C0B8CC /* Book.swift */; };
 		A57686B81D3A0DB000A7E359 /* DummyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A57686B71D3A0DB000A7E359 /* DummyIcon.png */; };
 		A57686BA1D3A202200A7E359 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57686B91D3A202200A7E359 /* PostRequest.swift */; };
 		A57BE8D61D3A00B600F67116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BE8D51D3A00B600F67116 /* AppDelegate.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		173BD4371D3B4F6F00C0B8CC /* BookCaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCaseController.swift; sourceTree = "<group>"; };
 		173BD4391D3B4F8100C0B8CC /* ReaderStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReaderStoryBoard.storyboard; sourceTree = "<group>"; };
+		173BD43B1D3B5D6900C0B8CC /* CaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseController.swift; sourceTree = "<group>"; };
+		173BD43D1D3B5F8100C0B8CC /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		173BD43F1D3B61D900C0B8CC /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A57686B71D3A0DB000A7E359 /* DummyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DummyIcon.png; sourceTree = "<group>"; };
 		A57686B91D3A202200A7E359 /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		A57BE8D21D3A00B600F67116 /* MagoMagazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagoMagazine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +121,9 @@
 				A57BE8E11D3A00B600F67116 /* Info.plist */,
 				A57686B71D3A0DB000A7E359 /* DummyIcon.png */,
 				173BD4391D3B4F8100C0B8CC /* ReaderStoryBoard.storyboard */,
+				173BD43F1D3B61D900C0B8CC /* Book.swift */,
+				173BD43D1D3B5F8100C0B8CC /* CustomCell.swift */,
+				173BD43B1D3B5D6900C0B8CC /* CaseController.swift */,
 			);
 			path = MagoMagazine;
 			sourceTree = "<group>";
@@ -275,7 +284,10 @@
 			files = (
 				A57BE8D81D3A00B600F67116 /* ViewController.swift in Sources */,
 				A57686BA1D3A202200A7E359 /* PostRequest.swift in Sources */,
+				173BD4401D3B61D900C0B8CC /* Book.swift in Sources */,
 				173BD4381D3B4F6F00C0B8CC /* BookCaseController.swift in Sources */,
+				173BD43C1D3B5D6900C0B8CC /* CaseController.swift in Sources */,
+				173BD43E1D3B5F8100C0B8CC /* CustomCell.swift in Sources */,
 				A57BE8D61D3A00B600F67116 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
