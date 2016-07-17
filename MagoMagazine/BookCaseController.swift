@@ -10,19 +10,41 @@ import Foundation
 import UIKit
 class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollectionViewDataSource, UICollectionViewDelegate{
     var bookWidth :CGFloat = 200.0
+    var bookHeight :CGFloat = 300.0
     let lineBooks = 4
-    let magazines = ["magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine","magazine"]
+    let magazines = ["book_blue","book_green","book_orange","book_pink","book_yellow","book_green","book_orange","book_pink","book_yellow","book_green","book_orange","book_pink"]
     
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidAppear(animated: Bool) {
         collectionView.dataSource = self
         collectionView.delegate = self
-        
         let image :UIImage = UIImage(named: "daiza")!
-        collectionView.backgroundColor = UIColor(patternImage: image)
+        //collectionView.backgroundColor = UIColor(patternImage: image)
+        addDaiza(0, y: 300)
+        
+        if ( magazines.count > 4) {
+            addDaiza(0, y: 600)
+        }
+        
+        if ( magazines.count > 8) {
+            addDaiza(0, y: 900)
+        }
+        
+        if ( magazines.count > 12) {
+            addDaiza(0, y: 1200)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func shouldAutorotate() -> Bool{
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        let orientation: UIInterfaceOrientationMask = [UIInterfaceOrientationMask.Landscape, UIInterfaceOrientationMask.PortraitUpsideDown]
+        return orientation
     }
     
     
@@ -38,7 +60,12 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let cellSize:CGFloat = self.view.frame.size.width/CGFloat(lineBooks) - 100
-        return CGSizeMake(bookWidth, bookWidth*1.3)
+        return CGSizeMake(bookWidth, bookHeight)
+    }
+    
+    // Cell が選択されたときの処理
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath)
     }
     
     
@@ -55,6 +82,13 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
         print ("mergin")
         return 0.0
         
+    }
+    
+    func addDaiza(x: CGFloat, y: CGFloat){
+        let imageDaiza = UIImageView(frame:CGRectMake(x,y,self.view.frame.width,100))
+        imageDaiza.image = UIImage(named: "daiza")
+        self.view.addSubview(imageDaiza)
+        self.view.bringSubviewToFront(collectionView)
     }
     
     /// 行ごとのマージン
