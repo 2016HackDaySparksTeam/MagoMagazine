@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CameraViewController.swift
 //  MagoMagazine
 //
 //  Created by 渡辺雄貴 on 2016/07/16.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, NSURLSessionTaskDelegate{
+class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     
     // セッション.
     var mySession : AVCaptureSession!
@@ -23,6 +23,8 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
     let myButton = UIButton(frame: CGRectMake(0,0,60,60))
     // ボタンを作成.
     let changeButton = UIButton(frame: CGRectMake(0,0,50,50))
+    // Reader画面への遷移用ボタンを作成
+    let nextBtn = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,25 +40,28 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
         }
         // バックカメラからVideoInputを取得.
         let videoInput: AVCaptureInput!
-        do {
-            videoInput = try AVCaptureDeviceInput.init(device: myDevice!)
-        }catch{
-            videoInput = nil
+        if let myDevice = myDevice  {
+            do {
+                videoInput = try AVCaptureDeviceInput.init(device: myDevice)
+            }catch{
+                videoInput = nil
+            }
+            
+            // セッションに追加.
+            mySession.addInput(videoInput)
+            // 出力先を生成.
+            myImageOutput = AVCaptureStillImageOutput()
+            // セッションに追加.
+            mySession.addOutput(myImageOutput)
+            // 画像を表示するレイヤーを生成.
+            let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.init(session:mySession)
+            myVideoLayer.frame = self.view.bounds
+            myVideoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+            // Viewに追加.
+            self.view.layer.addSublayer(myVideoLayer)
+            // セッション開始.
+            mySession.startRunning()
         }
-        // セッションに追加.
-        mySession.addInput(videoInput)
-        // 出力先を生成.
-        myImageOutput = AVCaptureStillImageOutput()
-        // セッションに追加.
-        mySession.addOutput(myImageOutput)
-        // 画像を表示するレイヤーを生成.
-        let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.init(session:mySession)
-        myVideoLayer.frame = self.view.bounds
-        myVideoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-        // Viewに追加.
-        self.view.layer.addSublayer(myVideoLayer)
-        // セッション開始.
-        mySession.startRunning()
         
         myButton.backgroundColor = UIColor.redColor();
         myButton.layer.masksToBounds = true
@@ -65,7 +70,7 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
         myButton.layer.borderWidth = 2
         myButton.layer.cornerRadius = 30.0
         myButton.layer.position = CGPoint(x: self.view.bounds.width/2, y:self.view.bounds.height-50)
-        myButton.addTarget(self, action: #selector(ViewController.onClickMyButton(_:)), forControlEvents: .TouchUpInside)
+        myButton.addTarget(self, action: #selector(CameraViewController.onClickMyButton(_:)), forControlEvents: .TouchUpInside)
         // UIボタンをViewに追加.
         self.view.addSubview(myButton)
         
@@ -79,7 +84,6 @@ class ViewController: UIViewController, NSURLSessionTaskDelegate{
         //changeButton.addTarget(self, action: #selector(ViewController.onClickChangeButton(_:)), forControlEvents: .TouchUpInside)
         // UIボタンをViewに追加.
         self.view.addSubview(changeButton)
-
     }
     
     // ボタンイベント.
