@@ -28,6 +28,7 @@
 		A57687171D3B602E00A7E359 /* ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687161D3B602E00A7E359 /* ICON.png */; };
 		A57687191D3B7AA200A7E359 /* ReadJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57687181D3B7AA200A7E359 /* ReadJsonData.swift */; };
 		A576871B1D3B7E6A00A7E359 /* dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = A576871A1D3B7E6A00A7E359 /* dummy.json */; };
+		A576871F1D3B9DAA00A7E359 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576871E1D3B9DAA00A7E359 /* Book.swift */; };
 		A57BE8D61D3A00B600F67116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BE8D51D3A00B600F67116 /* AppDelegate.swift */; };
 		A57BE8D81D3A00B600F67116 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BE8D71D3A00B600F67116 /* CameraViewController.swift */; };
 		A57BE8DD1D3A00B600F67116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57BE8DC1D3A00B600F67116 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		A57687161D3B602E00A7E359 /* ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICON.png; sourceTree = "<group>"; };
 		A57687181D3B7AA200A7E359 /* ReadJsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadJsonData.swift; sourceTree = "<group>"; };
 		A576871A1D3B7E6A00A7E359 /* dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy.json; sourceTree = "<group>"; };
+		A576871E1D3B9DAA00A7E359 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A57BE8D21D3A00B600F67116 /* MagoMagazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagoMagazine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57BE8D51D3A00B600F67116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A57BE8D71D3A00B600F67116 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				A57686F71D3A95C000A7E359 /* MagazineCollectionViewController.swift */,
 				A57687181D3B7AA200A7E359 /* ReadJsonData.swift */,
 				A57686B91D3A202200A7E359 /* PostRequest.swift */,
+				A576871E1D3B9DAA00A7E359 /* Book.swift */,
 				A57686F91D3B521C00A7E359 /* Main.storyboard */,
 				A57BE8DE1D3A00B600F67116 /* LaunchScreen.storyboard */,
 				A57BE8DC1D3A00B600F67116 /* Assets.xcassets */,
@@ -346,6 +349,7 @@
 			files = (
 				A57687191D3B7AA200A7E359 /* ReadJsonData.swift in Sources */,
 				A57BE8D81D3A00B600F67116 /* CameraViewController.swift in Sources */,
+				A576871F1D3B9DAA00A7E359 /* Book.swift in Sources */,
 				A57686BA1D3A202200A7E359 /* PostRequest.swift in Sources */,
 				A57BE8D61D3A00B600F67116 /* AppDelegate.swift in Sources */,
 				A57686F81D3A95C000A7E359 /* MagazineCollectionViewController.swift in Sources */,

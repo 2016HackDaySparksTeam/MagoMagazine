@@ -11,32 +11,6 @@ import Foundation
 class ReadJsonData {
     
     func readJson(){
-       /*
-        var urlString = "http://babyfuture.zayarwinttun.me/getURL.php"
-        var url = NSURL(string: urlString)
-        //
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: config)
-        let urlRequest : NSMutableURLRequest = NSMutableURLRequest()
-        //download by NSSession
-        //var task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler:{data, response, error in
-            //convert json data to dictionary
-//            var dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
-//            
-//            print(dict)
-           /// print(response!)
-       // })
-        
-      //  task.resume()
-        
-        let task: NSURLSessionDataTask = session.dataTaskWithRequest(urlRequest, completionHandler: { data, request, error in
-            //サーバサイドから返ってきたデータ
-            let result = NSString(data: data!, encoding: NSUTF8StringEncoding)!
-            print("result=\(result)")
-        })
-        task.resume()
-        */
-        
         
         let url = NSURL(string: "http://babyfuture.zayarwinttun.me/getURL.php")
         let jsonUrlData: NSData
@@ -56,14 +30,63 @@ class ReadJsonData {
                 print(jsonFile)
             }
             
+            print("----------------------")
+            
             //（下記）仮に、1.jsonだけからパースして取ってくる
+            print(result2[0])
+            getJson(result2[0])
             
             
             
         } catch {
             print("Error: can't create image.")
         }
-        
-        
     }
+    
+    
+    func getJson(url:String) {
+        
+        //        let URL:NSURL = NSURL(string: url)!
+        //        let jsonData :NSData = NSData(contentsOfURL: URL)!
+        //
+        //        do {
+        //            json = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers) as! NSDictionary
+        //
+        //            let response:NSDictionary = json.objectForKey("cover") as! NSDictionary
+        //            let response2:NSDictionary = response.objectForKey("number") as! NSDictionary
+        //            print(response2.objectForKey("year"))
+        //
+        //        } catch  {
+        //            // エラー処理
+        //            print("error")
+        //        }
+        
+        /*
+        let URL = NSURL(string: url)
+        let req = NSURLRequest(URL: URL!)
+        
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: configuration, delegate:nil, delegateQueue:NSOperationQueue.mainQueue())
+        
+        let task = session.dataTaskWithRequest(req, completionHandler: {
+            (data, response, error) -> Void in
+            do {
+                
+                let json = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSDictionary
+                
+                let response:NSDictionary = json.objectForKey("cover") as! NSDictionary
+                let response2:NSDictionary = response.objectForKey("number") as! NSDictionary
+                print(response2.objectForKey("year"))
+                
+            } catch {
+                
+                //エラー処理
+                
+            }
+            
+        })
+        task.resume()
+        */
+    }
+    
 }
