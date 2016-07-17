@@ -34,6 +34,7 @@ class ReadJsonData {
             
             //（下記）仮に、1.jsonだけからパースして取ってくる
             print(result2[0])
+            print("----------------------")
             getJson(result2[0])
             
             
@@ -46,22 +47,6 @@ class ReadJsonData {
     
     func getJson(url:String) {
         
-        //        let URL:NSURL = NSURL(string: url)!
-        //        let jsonData :NSData = NSData(contentsOfURL: URL)!
-        //
-        //        do {
-        //            json = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers) as! NSDictionary
-        //
-        //            let response:NSDictionary = json.objectForKey("cover") as! NSDictionary
-        //            let response2:NSDictionary = response.objectForKey("number") as! NSDictionary
-        //            print(response2.objectForKey("year"))
-        //
-        //        } catch  {
-        //            // エラー処理
-        //            print("error")
-        //        }
-        
-        
         let URL = NSURL(string: "http://" + url)
         let req = NSURLRequest(URL: URL!)
         
@@ -71,12 +56,35 @@ class ReadJsonData {
         let task = session.dataTaskWithRequest(req, completionHandler: {
             (data, response, error) -> Void in
             do {
-                print(data)
+                //print(data)
                 let json = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSDictionary
-                
-                let response:NSDictionary = json.objectForKey("cover") as! NSDictionary
-                let response2:NSDictionary = response.objectForKey("number") as! NSDictionary
-                print(response2.objectForKey("year"))
+                //cover
+                let coverResponse:NSDictionary = json.objectForKey("cover") as! NSDictionary
+                let response:NSDictionary = coverResponse.objectForKey("number") as! NSDictionary
+                print(response.objectForKey("year")!)
+                print(response.objectForKey("month")!)
+                print(response.objectForKey("week")!)
+                print(coverResponse.objectForKey("title") as! NSString)
+                print(coverResponse.objectForKey("image") as! NSString)
+                print(coverResponse.objectForKey("color") as! NSString)
+                //summary
+                let summaryResponse:NSDictionary = json.objectForKey("summary") as! NSDictionary
+                print(summaryResponse.objectForKey("title") as! NSString)
+                print(summaryResponse.objectForKey("joy") as! NSString)
+                print(summaryResponse.objectForKey("sorrow") as! NSString)
+                print(summaryResponse.objectForKey("anger") as! NSString)
+                /////print(summaryResponse.objectForKey("surprise") as! NSString)
+                //contents
+                let contentsResponse:NSArray = json.objectForKey("contents") as! NSArray
+                for i in 0..<contentsResponse.count {
+                    print(contentsResponse[i]["text"] as! String)
+                    print(contentsResponse[i]["templateNo"] as! Int)
+                    let response2:NSArray = contentsResponse[i]["images"] as! NSArray
+                    for i in 0..<response2.count {
+                        print(response2[i]["url"] as! String)
+                        print(response2[i]["caption"] as! String)
+                    }
+                }
                 
             } catch {
                 
