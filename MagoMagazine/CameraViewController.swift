@@ -110,8 +110,7 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     }
     
     func onChangeViewButton(sender: UIButton) {
-        let next = MagazineCollectionViewController()
-        self.navigationController?.pushViewController(next, animated: true)
+        performSegueWithIdentifier("change", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
