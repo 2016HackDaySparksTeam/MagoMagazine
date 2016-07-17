@@ -36,7 +36,7 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     
     let whiteLabel = UILabel()
     
-    let secondview = MagazineCollectionViewController()
+    let secondview = BookCaseController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,8 +130,17 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     }
     
     func onChangeViewButton(sender: UIButton) {
-        secondview.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        self.presentViewController(secondview, animated: true, completion: nil)
+        //secondview.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        //self.presentViewController(secondview, animated: true, completion: nil)
+        //Magazine
+        let storyboard: UIStoryboard = UIStoryboard(name: "ReaderStoryBoard", bundle: nil)
+        let next: BookCaseController = storyboard.instantiateInitialViewController() as! BookCaseController
+        
+        //let storyboard: UIStoryboard = UIStoryboard(name: "Magazine", bundle: nil)
+        //let next: MagazineViewController = storyboard.instantiateInitialViewController() as! MagazineViewController
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(next, animated: true, completion: nil)
+        })
     }
     
     override func didReceiveMemoryWarning() {
