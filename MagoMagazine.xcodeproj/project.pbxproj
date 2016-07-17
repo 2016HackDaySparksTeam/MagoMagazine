@@ -7,9 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		058A460F13749FE6D7E28D28 /* Pods_MagoMagazine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30052FA080C759BC61556902 /* Pods_MagoMagazine.framework */; };
+		1731CCBF1D3BF4F000A2E5AC /* BookCaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731CCB51D3BF4F000A2E5AC /* BookCaseController.swift */; };
+		1731CCC01D3BF4F000A2E5AC /* CaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731CCB61D3BF4F000A2E5AC /* CaseController.swift */; };
+		1731CCC11D3BF4F000A2E5AC /* CustomBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731CCB71D3BF4F000A2E5AC /* CustomBook.swift */; };
+		1731CCC21D3BF4F000A2E5AC /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731CCB81D3BF4F000A2E5AC /* CustomCell.swift */; };
+		1731CCC31D3BF4F000A2E5AC /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731CCB91D3BF4F000A2E5AC /* CustomPageViewController.swift */; };
+		1731CCC41D3BF4F000A2E5AC /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1731CCBA1D3BF4F000A2E5AC /* Magazine.storyboard */; };
+		1731CCC51D3BF4F000A2E5AC /* MagazineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731CCBB1D3BF4F000A2E5AC /* MagazineViewController.swift */; };
+		1731CCC61D3BF4F000A2E5AC /* ReaderStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1731CCBC1D3BF4F000A2E5AC /* ReaderStoryBoard.storyboard */; };
+		1731CCC71D3BF4F000A2E5AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731CCBD1D3BF4F000A2E5AC /* ViewController.swift */; };
+		1731CCC81D3BF4F000A2E5AC /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1731CCBE1D3BF4F000A2E5AC /* Walkthrough.storyboard */; };
+		38E0921DDF989BC286BCDEED /* Pods_MagoMagazineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D54765A19EF9A1444947E9B /* Pods_MagoMagazineTests.framework */; };
+		981999366CF853FEAB6565D9 /* Pods_MagoMagazineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092BCAF22AC255EF9DCD7FE8 /* Pods_MagoMagazineUITests.framework */; };
+		A57686B81D3A0DB000A7E359 /* DummyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A57686B71D3A0DB000A7E359 /* DummyIcon.png */; };
+		A57686BA1D3A202200A7E359 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57686B91D3A202200A7E359 /* PostRequest.swift */; };
+		A57686F61D3A519700A7E359 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = A57686F51D3A519700A7E359 /* head.png */; };
+		A57686F81D3A95C000A7E359 /* MagazineCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57686F71D3A95C000A7E359 /* MagazineCollectionViewController.swift */; };
+		A57686FA1D3B521C00A7E359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57686F91D3B521C00A7E359 /* Main.storyboard */; };
+		A57686FD1D3B5DFF00A7E359 /* ipad icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A57686FB1D3B5DFF00A7E359 /* ipad icon.png */; };
+		A57686FE1D3B5DFF00A7E359 /* iphone icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A57686FC1D3B5DFF00A7E359 /* iphone icon.png */; };
+		A57687001D3B5E0C00A7E359 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A57686FF1D3B5E0C00A7E359 /* background.png */; };
+		A57687061D3B5E3700A7E359 /* book_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687011D3B5E3700A7E359 /* book_pink.png */; };
+		A57687071D3B5E3700A7E359 /* book_sky.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687021D3B5E3700A7E359 /* book_sky.png */; };
+		A57687081D3B5E3700A7E359 /* book_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687031D3B5E3700A7E359 /* book_yellow.png */; };
+		A57687091D3B5E3700A7E359 /* daiza.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687041D3B5E3700A7E359 /* daiza.png */; };
+		A576870A1D3B5E3700A7E359 /* 完成図.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687051D3B5E3700A7E359 /* 完成図.png */; };
+		A576870E1D3B5E3E00A7E359 /* book_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A576870B1D3B5E3E00A7E359 /* book_blue.png */; };
+		A576870F1D3B5E3E00A7E359 /* book_green.png in Resources */ = {isa = PBXBuildFile; fileRef = A576870C1D3B5E3E00A7E359 /* book_green.png */; };
+		A57687101D3B5E3E00A7E359 /* book_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = A576870D1D3B5E3E00A7E359 /* book_orange.png */; };
+		A57687131D3B5E4A00A7E359 /* bottun_changecamera.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687111D3B5E4A00A7E359 /* bottun_changecamera.png */; };
+		A57687141D3B5E4A00A7E359 /* bottun_changeview.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687121D3B5E4A00A7E359 /* bottun_changeview.png */; };
+		A57687171D3B602E00A7E359 /* ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = A57687161D3B602E00A7E359 /* ICON.png */; };
+		A57687191D3B7AA200A7E359 /* ReadJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57687181D3B7AA200A7E359 /* ReadJsonData.swift */; };
+		A576871B1D3B7E6A00A7E359 /* dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = A576871A1D3B7E6A00A7E359 /* dummy.json */; };
+		A576871F1D3B9DAA00A7E359 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576871E1D3B9DAA00A7E359 /* Book.swift */; };
 		A57BE8D61D3A00B600F67116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BE8D51D3A00B600F67116 /* AppDelegate.swift */; };
-		A57BE8D81D3A00B600F67116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BE8D71D3A00B600F67116 /* ViewController.swift */; };
-		A57BE8DB1D3A00B600F67116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57BE8D91D3A00B600F67116 /* Main.storyboard */; };
+		A57BE8D81D3A00B600F67116 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BE8D71D3A00B600F67116 /* CameraViewController.swift */; };
 		A57BE8DD1D3A00B600F67116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57BE8DC1D3A00B600F67116 /* Assets.xcassets */; };
 		A57BE8E01D3A00B600F67116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57BE8DE1D3A00B600F67116 /* LaunchScreen.storyboard */; };
 		A57BE8EB1D3A00B600F67116 /* MagoMagazineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BE8EA1D3A00B600F67116 /* MagoMagazineTests.swift */; };
@@ -34,10 +68,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012C71F29569DF5FB697DB4F /* Pods-MagoMagazine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagoMagazine.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagoMagazine/Pods-MagoMagazine.release.xcconfig"; sourceTree = "<group>"; };
+		07B98EF6AD21EF7D7C616F14 /* Pods-MagoMagazineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagoMagazineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagoMagazineTests/Pods-MagoMagazineTests.release.xcconfig"; sourceTree = "<group>"; };
+		092BCAF22AC255EF9DCD7FE8 /* Pods_MagoMagazineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagoMagazineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1731CCB51D3BF4F000A2E5AC /* BookCaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCaseController.swift; sourceTree = "<group>"; };
+		1731CCB61D3BF4F000A2E5AC /* CaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseController.swift; sourceTree = "<group>"; };
+		1731CCB71D3BF4F000A2E5AC /* CustomBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBook.swift; sourceTree = "<group>"; };
+		1731CCB81D3BF4F000A2E5AC /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1731CCB91D3BF4F000A2E5AC /* CustomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		1731CCBA1D3BF4F000A2E5AC /* Magazine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
+		1731CCBB1D3BF4F000A2E5AC /* MagazineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineViewController.swift; sourceTree = "<group>"; };
+		1731CCBC1D3BF4F000A2E5AC /* ReaderStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReaderStoryBoard.storyboard; sourceTree = "<group>"; };
+		1731CCBD1D3BF4F000A2E5AC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1731CCBE1D3BF4F000A2E5AC /* Walkthrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Walkthrough.storyboard; sourceTree = "<group>"; };
+		1D54765A19EF9A1444947E9B /* Pods_MagoMagazineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagoMagazineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2441AC5C231E16AAF3928A67 /* Pods-MagoMagazineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagoMagazineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagoMagazineTests/Pods-MagoMagazineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30052FA080C759BC61556902 /* Pods_MagoMagazine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagoMagazine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4887CDB6F35FBDE28DC1E898 /* Pods-MagoMagazineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagoMagazineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagoMagazineUITests/Pods-MagoMagazineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F8A204C571BFA8B5DD9FE90 /* Pods-MagoMagazine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagoMagazine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagoMagazine/Pods-MagoMagazine.debug.xcconfig"; sourceTree = "<group>"; };
+		A57686B71D3A0DB000A7E359 /* DummyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DummyIcon.png; sourceTree = "<group>"; };
+		A57686B91D3A202200A7E359 /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		A57686F51D3A519700A7E359 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		A57686F71D3A95C000A7E359 /* MagazineCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineCollectionViewController.swift; sourceTree = "<group>"; };
+		A57686F91D3B521C00A7E359 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A57686FB1D3B5DFF00A7E359 /* ipad icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad icon.png"; sourceTree = "<group>"; };
+		A57686FC1D3B5DFF00A7E359 /* iphone icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone icon.png"; sourceTree = "<group>"; };
+		A57686FF1D3B5E0C00A7E359 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A57687011D3B5E3700A7E359 /* book_pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_pink.png; sourceTree = "<group>"; };
+		A57687021D3B5E3700A7E359 /* book_sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_sky.png; sourceTree = "<group>"; };
+		A57687031D3B5E3700A7E359 /* book_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_yellow.png; sourceTree = "<group>"; };
+		A57687041D3B5E3700A7E359 /* daiza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daiza.png; sourceTree = "<group>"; };
+		A57687051D3B5E3700A7E359 /* 完成図.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "完成図.png"; sourceTree = "<group>"; };
+		A576870B1D3B5E3E00A7E359 /* book_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_blue.png; sourceTree = "<group>"; };
+		A576870C1D3B5E3E00A7E359 /* book_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_green.png; sourceTree = "<group>"; };
+		A576870D1D3B5E3E00A7E359 /* book_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_orange.png; sourceTree = "<group>"; };
+		A57687111D3B5E4A00A7E359 /* bottun_changecamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottun_changecamera.png; sourceTree = "<group>"; };
+		A57687121D3B5E4A00A7E359 /* bottun_changeview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottun_changeview.png; sourceTree = "<group>"; };
+		A57687161D3B602E00A7E359 /* ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICON.png; sourceTree = "<group>"; };
+		A57687181D3B7AA200A7E359 /* ReadJsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadJsonData.swift; sourceTree = "<group>"; };
+		A576871A1D3B7E6A00A7E359 /* dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy.json; sourceTree = "<group>"; };
+		A576871E1D3B9DAA00A7E359 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A57BE8D21D3A00B600F67116 /* MagoMagazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagoMagazine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57BE8D51D3A00B600F67116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A57BE8D71D3A00B600F67116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A57BE8DA1D3A00B600F67116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A57BE8D71D3A00B600F67116 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A57BE8DC1D3A00B600F67116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57BE8DF1D3A00B600F67116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57BE8E11D3A00B600F67116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +120,7 @@
 		A57BE8F11D3A00B600F67116 /* MagoMagazineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagoMagazineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57BE8F51D3A00B600F67116 /* MagoMagazineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagoMagazineUITests.swift; sourceTree = "<group>"; };
 		A57BE8F71D3A00B600F67116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC52B764C9EF6175C27114B1 /* Pods-MagoMagazineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagoMagazineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagoMagazineUITests/Pods-MagoMagazineUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058A460F13749FE6D7E28D28 /* Pods_MagoMagazine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E0921DDF989BC286BCDEED /* Pods_MagoMagazineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +144,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981999366CF853FEAB6565D9 /* Pods_MagoMagazineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BC8D497C9E7B65BFE20F1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30052FA080C759BC61556902 /* Pods_MagoMagazine.framework */,
+				1D54765A19EF9A1444947E9B /* Pods_MagoMagazineTests.framework */,
+				092BCAF22AC255EF9DCD7FE8 /* Pods_MagoMagazineUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		230CDA48499EA9349F93F327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F8A204C571BFA8B5DD9FE90 /* Pods-MagoMagazine.debug.xcconfig */,
+				012C71F29569DF5FB697DB4F /* Pods-MagoMagazine.release.xcconfig */,
+				2441AC5C231E16AAF3928A67 /* Pods-MagoMagazineTests.debug.xcconfig */,
+				07B98EF6AD21EF7D7C616F14 /* Pods-MagoMagazineTests.release.xcconfig */,
+				4887CDB6F35FBDE28DC1E898 /* Pods-MagoMagazineUITests.debug.xcconfig */,
+				CC52B764C9EF6175C27114B1 /* Pods-MagoMagazineUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A57687151D3B5E5F00A7E359 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				A57687161D3B602E00A7E359 /* ICON.png */,
+				A57686FF1D3B5E0C00A7E359 /* background.png */,
+				A57687021D3B5E3700A7E359 /* book_sky.png */,
+				A57686FB1D3B5DFF00A7E359 /* ipad icon.png */,
+				A57687011D3B5E3700A7E359 /* book_pink.png */,
+				A57686B71D3A0DB000A7E359 /* DummyIcon.png */,
+				A57687031D3B5E3700A7E359 /* book_yellow.png */,
+				A57686FC1D3B5DFF00A7E359 /* iphone icon.png */,
+				A57687041D3B5E3700A7E359 /* daiza.png */,
+				A576870B1D3B5E3E00A7E359 /* book_blue.png */,
+				A576870D1D3B5E3E00A7E359 /* book_orange.png */,
+				A57687121D3B5E4A00A7E359 /* bottun_changeview.png */,
+				A57687111D3B5E4A00A7E359 /* bottun_changecamera.png */,
+				A576870C1D3B5E3E00A7E359 /* book_green.png */,
+				A57686F51D3A519700A7E359 /* head.png */,
+				A57687051D3B5E3700A7E359 /* 完成図.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		A57BE8C91D3A00B600F67116 = {
 			isa = PBXGroup;
 			children = (
 				A57BE8D41D3A00B600F67116 /* MagoMagazine */,
+				A57BE8D31D3A00B600F67116 /* Products */,
 				A57BE8E91D3A00B600F67116 /* MagoMagazineTests */,
 				A57BE8F41D3A00B600F67116 /* MagoMagazineUITests */,
-				A57BE8D31D3A00B600F67116 /* Products */,
+				230CDA48499EA9349F93F327 /* Pods */,
+				04BC8D497C9E7B65BFE20F1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +223,27 @@
 			isa = PBXGroup;
 			children = (
 				A57BE8D51D3A00B600F67116 /* AppDelegate.swift */,
-				A57BE8D71D3A00B600F67116 /* ViewController.swift */,
-				A57BE8D91D3A00B600F67116 /* Main.storyboard */,
-				A57BE8DC1D3A00B600F67116 /* Assets.xcassets */,
+				A57BE8D71D3A00B600F67116 /* CameraViewController.swift */,
+				A57686F71D3A95C000A7E359 /* MagazineCollectionViewController.swift */,
+				A57687181D3B7AA200A7E359 /* ReadJsonData.swift */,
+				A57686B91D3A202200A7E359 /* PostRequest.swift */,
+				A576871E1D3B9DAA00A7E359 /* Book.swift */,
+				A57686F91D3B521C00A7E359 /* Main.storyboard */,
 				A57BE8DE1D3A00B600F67116 /* LaunchScreen.storyboard */,
+				1731CCB51D3BF4F000A2E5AC /* BookCaseController.swift */,
+				1731CCB61D3BF4F000A2E5AC /* CaseController.swift */,
+				1731CCB71D3BF4F000A2E5AC /* CustomBook.swift */,
+				1731CCB81D3BF4F000A2E5AC /* CustomCell.swift */,
+				1731CCB91D3BF4F000A2E5AC /* CustomPageViewController.swift */,
+				1731CCBA1D3BF4F000A2E5AC /* Magazine.storyboard */,
+				1731CCBB1D3BF4F000A2E5AC /* MagazineViewController.swift */,
+				1731CCBC1D3BF4F000A2E5AC /* ReaderStoryBoard.storyboard */,
+				1731CCBD1D3BF4F000A2E5AC /* ViewController.swift */,
+				1731CCBE1D3BF4F000A2E5AC /* Walkthrough.storyboard */,
+				A57BE8DC1D3A00B600F67116 /* Assets.xcassets */,
 				A57BE8E11D3A00B600F67116 /* Info.plist */,
+				A576871A1D3B7E6A00A7E359 /* dummy.json */,
+				A57687151D3B5E5F00A7E359 /* image */,
 			);
 			path = MagoMagazine;
 			sourceTree = "<group>";
@@ -114,7 +255,7 @@
 				A57BE8EC1D3A00B600F67116 /* Info.plist */,
 			);
 			path = MagoMagazineTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A57BE8F41D3A00B600F67116 /* MagoMagazineUITests */ = {
 			isa = PBXGroup;
@@ -132,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A57BE8FA1D3A00B600F67116 /* Build configuration list for PBXNativeTarget "MagoMagazine" */;
 			buildPhases = (
+				669B5781AF259FCA518AEDE9 /* [CP] Check Pods Manifest.lock */,
 				A57BE8CE1D3A00B600F67116 /* Sources */,
 				A57BE8CF1D3A00B600F67116 /* Frameworks */,
 				A57BE8D01D3A00B600F67116 /* Resources */,
+				AFC7C045D3D038BD24053A3B /* [CP] Embed Pods Frameworks */,
+				1D469B6C009F7692D8803C04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +293,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A57BE8FD1D3A00B600F67116 /* Build configuration list for PBXNativeTarget "MagoMagazineTests" */;
 			buildPhases = (
+				FA7885ED54793DB8527A7822 /* [CP] Check Pods Manifest.lock */,
 				A57BE8E21D3A00B600F67116 /* Sources */,
 				A57BE8E31D3A00B600F67116 /* Frameworks */,
 				A57BE8E41D3A00B600F67116 /* Resources */,
+				8BCD7B40175DDFF9D5A4DDAB /* [CP] Embed Pods Frameworks */,
+				3B3AF1076DB36C5745619B7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A57BE9001D3A00B600F67116 /* Build configuration list for PBXNativeTarget "MagoMagazineUITests" */;
 			buildPhases = (
+				9EC5AABB64F22F672211710A /* [CP] Check Pods Manifest.lock */,
 				A57BE8ED1D3A00B600F67116 /* Sources */,
 				A57BE8EE1D3A00B600F67116 /* Frameworks */,
 				A57BE8EF1D3A00B600F67116 /* Resources */,
+				2F77203EC34A3827B43F7ED9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +342,7 @@
 				TargetAttributes = {
 					A57BE8D11D3A00B600F67116 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = DYU456A94Q;
+						DevelopmentTeam = H9V3G3ZMV8;
 					};
 					A57BE8E51D3A00B600F67116 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -232,9 +381,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57687071D3B5E3700A7E359 /* book_sky.png in Resources */,
+				1731CCC41D3BF4F000A2E5AC /* Magazine.storyboard in Resources */,
+				A57687091D3B5E3700A7E359 /* daiza.png in Resources */,
+				1731CCC81D3BF4F000A2E5AC /* Walkthrough.storyboard in Resources */,
 				A57BE8E01D3A00B600F67116 /* LaunchScreen.storyboard in Resources */,
+				A57687131D3B5E4A00A7E359 /* bottun_changecamera.png in Resources */,
+				A57687061D3B5E3700A7E359 /* book_pink.png in Resources */,
+				A57687001D3B5E0C00A7E359 /* background.png in Resources */,
+				A576871B1D3B7E6A00A7E359 /* dummy.json in Resources */,
+				A57686FE1D3B5DFF00A7E359 /* iphone icon.png in Resources */,
+				A576870E1D3B5E3E00A7E359 /* book_blue.png in Resources */,
+				1731CCC61D3BF4F000A2E5AC /* ReaderStoryBoard.storyboard in Resources */,
+				A57687081D3B5E3700A7E359 /* book_yellow.png in Resources */,
+				A57687101D3B5E3E00A7E359 /* book_orange.png in Resources */,
+				A57687171D3B602E00A7E359 /* ICON.png in Resources */,
+				A57687141D3B5E4A00A7E359 /* bottun_changeview.png in Resources */,
+				A57686FA1D3B521C00A7E359 /* Main.storyboard in Resources */,
+				A57686F61D3A519700A7E359 /* head.png in Resources */,
+				A57686B81D3A0DB000A7E359 /* DummyIcon.png in Resources */,
+				A576870A1D3B5E3700A7E359 /* 完成図.png in Resources */,
 				A57BE8DD1D3A00B600F67116 /* Assets.xcassets in Resources */,
-				A57BE8DB1D3A00B600F67116 /* Main.storyboard in Resources */,
+				A57686FD1D3B5DFF00A7E359 /* ipad icon.png in Resources */,
+				A576870F1D3B5E3E00A7E359 /* book_green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +423,147 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D469B6C009F7692D8803C04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagoMagazine/Pods-MagoMagazine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F77203EC34A3827B43F7ED9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagoMagazineUITests/Pods-MagoMagazineUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B3AF1076DB36C5745619B7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagoMagazineTests/Pods-MagoMagazineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669B5781AF259FCA518AEDE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCD7B40175DDFF9D5A4DDAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagoMagazineTests/Pods-MagoMagazineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC5AABB64F22F672211710A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFC7C045D3D038BD24053A3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagoMagazine/Pods-MagoMagazine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7885ED54793DB8527A7822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A57BE8CE1D3A00B600F67116 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57BE8D81D3A00B600F67116 /* ViewController.swift in Sources */,
+				A57687191D3B7AA200A7E359 /* ReadJsonData.swift in Sources */,
+				A57BE8D81D3A00B600F67116 /* CameraViewController.swift in Sources */,
+				1731CCC51D3BF4F000A2E5AC /* MagazineViewController.swift in Sources */,
+				1731CCC21D3BF4F000A2E5AC /* CustomCell.swift in Sources */,
+				1731CCC31D3BF4F000A2E5AC /* CustomPageViewController.swift in Sources */,
+				A576871F1D3B9DAA00A7E359 /* Book.swift in Sources */,
+				1731CCBF1D3BF4F000A2E5AC /* BookCaseController.swift in Sources */,
+				A57686BA1D3A202200A7E359 /* PostRequest.swift in Sources */,
+				1731CCC71D3BF4F000A2E5AC /* ViewController.swift in Sources */,
 				A57BE8D61D3A00B600F67116 /* AppDelegate.swift in Sources */,
+				1731CCC11D3BF4F000A2E5AC /* CustomBook.swift in Sources */,
+				A57686F81D3A95C000A7E359 /* MagazineCollectionViewController.swift in Sources */,
+				1731CCC01D3BF4F000A2E5AC /* CaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +599,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A57BE8D91D3A00B600F67116 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A57BE8DA1D3A00B600F67116 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A57BE8DE1D3A00B600F67116 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -400,28 +695,41 @@
 		};
 		A57BE8FB1D3A00B600F67116 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8A204C571BFA8B5DD9FE90 /* Pods-MagoMagazine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MagoMagazine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.watanabeyuuki.MagoMagazine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A57BE8FC1D3A00B600F67116 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012C71F29569DF5FB697DB4F /* Pods-MagoMagazine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MagoMagazine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.watanabeyuuki.MagoMagazine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		A57BE8FE1D3A00B600F67116 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2441AC5C231E16AAF3928A67 /* Pods-MagoMagazineTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MagoMagazineTests/Info.plist;
@@ -434,6 +742,7 @@
 		};
 		A57BE8FF1D3A00B600F67116 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B98EF6AD21EF7D7C616F14 /* Pods-MagoMagazineTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MagoMagazineTests/Info.plist;
@@ -446,6 +755,7 @@
 		};
 		A57BE9011D3A00B600F67116 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4887CDB6F35FBDE28DC1E898 /* Pods-MagoMagazineUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MagoMagazineUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -457,6 +767,7 @@
 		};
 		A57BE9021D3A00B600F67116 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC52B764C9EF6175C27114B1 /* Pods-MagoMagazineUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MagoMagazineUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -485,6 +796,7 @@
 				A57BE8FC1D3A00B600F67116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A57BE8FD1D3A00B600F67116 /* Build configuration list for PBXNativeTarget "MagoMagazineTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +805,7 @@
 				A57BE8FF1D3A00B600F67116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A57BE9001D3A00B600F67116 /* Build configuration list for PBXNativeTarget "MagoMagazineUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +814,7 @@
 				A57BE9021D3A00B600F67116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

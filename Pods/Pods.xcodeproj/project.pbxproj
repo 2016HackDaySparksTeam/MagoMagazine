@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0272F81DF846D036B757AE4B8DE5E2EC /* Pods-MagoMagazineTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE99C55BE14DE1CC5F5F1E00405169 /* Pods-MagoMagazineTests-dummy.m */; };
+		40C827ABDB3F3436BBC0671B2519F025 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D80379F6F6B619D685801E6302BDBA /* BWWalkthroughViewController.swift */; };
+		4BCEBFED3980E7F702AEC3C7DC2C22E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4E38ECF1448762919B2D305875C84686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		67CACB6DB20AF249AFE569694B8374D6 /* Pods-MagoMagazineTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88729F6CCD2D44D861BFE137751EC4E0 /* Pods-MagoMagazineTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A5598387DCEF1B59833448F3B5F6345 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		7F8D916BD49D853E1BF8CB1EFF56F457 /* Pods-MagoMagazine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B99AAFA2D2D4DEDCBCDD50665D56F /* Pods-MagoMagazine-dummy.m */; };
+		826E210AE97FB4FD8BC42B3E78A07704 /* Pods-MagoMagazine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2653A95B35F4AC334BDF8CF6C2A4493 /* Pods-MagoMagazine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E4CFCA18476E2521663362DBF5E50DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		994EEB76829CAF89430CEBC248C0D94B /* BWWalkthrough-BWWalkthrough-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E97635252AB7F831B5EF1F888BB80F2 /* BWWalkthrough-BWWalkthrough-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C0D48DB3AE3B827183BBACDB01E79DD /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061741D1BB8EA3F896DF70343698499B /* BWWalkthroughPageViewController.swift */; };
+		DEDFC7B3F6D3C2BAA090F9F02786BCD2 /* BWWalkthrough.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 81C8369B012BF0CA6B656DF32526BDD7 /* BWWalkthrough.bundle */; };
+		E3ABF6A7E1F3BD40EA89029B9583CE36 /* BWWalkthrough-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C1B374C412C3924696086319C0D947 /* BWWalkthrough-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E66BCF0D70A62711A521E9E4C7BE9728 /* BWWalkthrough-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EAC2D8399F255A8808F61C12D06E8D /* BWWalkthrough-dummy.m */; };
+		F7E8CAFE9F5926AEAEE8107C55385390 /* Pods-MagoMagazineUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C43AF153963054C81B82AC19A30BA9 /* Pods-MagoMagazineUITests-dummy.m */; };
+		F9952092D979EDDC543D588A969D459C /* Pods-MagoMagazineUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B4996D5445A9B41E7B8F11FB1A357C /* Pods-MagoMagazineUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		874FA2472AA772D9288347F367F40F43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17664F8F0232329D875EC690EB653867;
+			remoteInfo = BWWalkthrough;
+		};
+		CADC63AC3073D6C741B22A96D34AA490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A371D9F716AF507FF01A593DD0D9DFDF;
+			remoteInfo = "BWWalkthrough-BWWalkthrough";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01CDD34DA2BB3281669102EA8A71B18B /* Pods-MagoMagazine-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagoMagazine-frameworks.sh"; sourceTree = "<group>"; };
+		061741D1BB8EA3F896DF70343698499B /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = Pod/Classes/BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		081D43A92BC974ACB69502ACE58F63BE /* Pods-MagoMagazineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagoMagazineTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B4698525915BE37724C889EBEFD1211 /* Pods_MagoMagazineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagoMagazineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD7748D068DBE1131770E00694801CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E938F9A476D2BF14562E538AFE94E44 /* Pods-MagoMagazine-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MagoMagazine-acknowledgements.plist"; sourceTree = "<group>"; };
+		22EAC2D8399F255A8808F61C12D06E8D /* BWWalkthrough-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BWWalkthrough-dummy.m"; sourceTree = "<group>"; };
+		25D80379F6F6B619D685801E6302BDBA /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = Pod/Classes/BWWalkthroughViewController.swift; sourceTree = "<group>"; };
+		26388B9E74F46D7DBB93781AB110B8AA /* Pods-MagoMagazine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MagoMagazine.modulemap"; sourceTree = "<group>"; };
+		3027F9C540FBE30128FB8DAB5C874135 /* BWWalkthrough.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BWWalkthrough.modulemap; sourceTree = "<group>"; };
+		30B4996D5445A9B41E7B8F11FB1A357C /* Pods-MagoMagazineUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MagoMagazineUITests-umbrella.h"; sourceTree = "<group>"; };
+		333AF54ABFAD760AF13C9AA9ACE3A73E /* Pods_MagoMagazine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagoMagazine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F484B997B4EAC596859EB339BFA5506 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FC3AF3136479FF6AC660FB61D33C71 /* Pods_MagoMagazineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagoMagazineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C1B374C412C3924696086319C0D947 /* BWWalkthrough-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BWWalkthrough-umbrella.h"; sourceTree = "<group>"; };
+		5965316336DA4A87C6642217612A4A8A /* Pods-MagoMagazineUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MagoMagazineUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		688735086A515B7D3FE1D4F733FEBEAC /* Pods-MagoMagazineUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagoMagazineUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6B7F71CA703658CED27E75EE42C97B37 /* Pods-MagoMagazineTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MagoMagazineTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E75AEA4EEDD9A2F94E097A0CAE227FA /* Pods-MagoMagazineTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagoMagazineTests-frameworks.sh"; sourceTree = "<group>"; };
+		7A70BFC561A69A0998BEE423605124B3 /* Pods-MagoMagazineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagoMagazineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4503F46D5F06ABF8644D950014F9D3 /* BWWalkthrough.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BWWalkthrough.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E97635252AB7F831B5EF1F888BB80F2 /* BWWalkthrough-BWWalkthrough-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BWWalkthrough-BWWalkthrough-Bridging-Header.h"; path = "Pod/Classes/BWWalkthrough-BWWalkthrough-Bridging-Header.h"; sourceTree = "<group>"; };
+		81C8369B012BF0CA6B656DF32526BDD7 /* BWWalkthrough.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWWalkthrough.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		86686D2236E192E17E2E2C9A7ADC0935 /* Pods-MagoMagazine-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagoMagazine-resources.sh"; sourceTree = "<group>"; };
+		88729F6CCD2D44D861BFE137751EC4E0 /* Pods-MagoMagazineTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MagoMagazineTests-umbrella.h"; sourceTree = "<group>"; };
+		88AE99C55BE14DE1CC5F5F1E00405169 /* Pods-MagoMagazineTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MagoMagazineTests-dummy.m"; sourceTree = "<group>"; };
+		9049597E4625B7F80F449A5C49947D01 /* Pods-MagoMagazineUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagoMagazineUITests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E6D8DD4376EB7FF9544FC04260A7400 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13F76ECD9542ADA3538AD827F8A226D /* ResourceBundle-BWWalkthrough-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BWWalkthrough-Info.plist"; sourceTree = "<group>"; };
+		A2653A95B35F4AC334BDF8CF6C2A4493 /* Pods-MagoMagazine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MagoMagazine-umbrella.h"; sourceTree = "<group>"; };
+		A2C43AF153963054C81B82AC19A30BA9 /* Pods-MagoMagazineUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MagoMagazineUITests-dummy.m"; sourceTree = "<group>"; };
+		A34CBAEBD4A5C36A41469F759A7FB388 /* Pods-MagoMagazine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagoMagazine.release.xcconfig"; sourceTree = "<group>"; };
+		AC52431C4DB3081951A181245B9FE212 /* Pods-MagoMagazineUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MagoMagazineUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF8C43E1F5574DE5F0B88127872BD244 /* Pods-MagoMagazineTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MagoMagazineTests.modulemap"; sourceTree = "<group>"; };
+		B35AEECFC4E47A2B7CF51C54E6158787 /* Pods-MagoMagazineUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MagoMagazineUITests.modulemap"; sourceTree = "<group>"; };
+		C96DB773016AC069D5DA4C31D32A2784 /* Pods-MagoMagazine-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MagoMagazine-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9D695F8765A0FFDDFBB63D5A87B10A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB6C2AD3082396DBB7A484BAF715F724 /* Pods-MagoMagazineTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MagoMagazineTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DBD5032D3273BECC268E23A665FCD426 /* BWWalkthrough.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BWWalkthrough.xcconfig; sourceTree = "<group>"; };
+		DD8B99AAFA2D2D4DEDCBCDD50665D56F /* Pods-MagoMagazine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MagoMagazine-dummy.m"; sourceTree = "<group>"; };
+		E4ABF7CF87D3057706EFB702DD6D5E8D /* Pods-MagoMagazine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagoMagazine.debug.xcconfig"; sourceTree = "<group>"; };
+		F1A18AFFC5F2922ED76707AEB774B517 /* Pods-MagoMagazineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagoMagazineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7BE6AA7DFA2C3CDB17CE67EFE44B9E8 /* Pods-MagoMagazineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MagoMagazineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9B640781281A1BBF7D201D681238552 /* BWWalkthrough-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BWWalkthrough-prefix.pch"; sourceTree = "<group>"; };
+		FD89F704ADFB58CF843BFE330F3932E8 /* Pods-MagoMagazineTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MagoMagazineTests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F1140D524077128ACE9C996ACEAAE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4CFCA18476E2521663362DBF5E50DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2DA83DF387250AE6297F7FE08B1038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5598387DCEF1B59833448F3B5F6345 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2682A6280EF9E38840917B1CB30B366E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCEBFED3980E7F702AEC3C7DC2C22E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26E5BDCC3223D9A14A6D0A6F3F0DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E38ECF1448762919B2D305875C84686 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E16A6CE53F5C4E400769AFDB64471C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AE54F8283227C0C559D01411AF4B13A6 /* Pods */,
+				90B520308C902D23E83FAF0C8E968EA8 /* Products */,
+				813C68DA2150287F6328A7717545DD58 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		813C68DA2150287F6328A7717545DD58 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E73E1F3BBAA73B381FC63AB1BC624A2A /* Pods-MagoMagazine */,
+				F72E91A70EDC4AF35CF0B0833D1F0C7F /* Pods-MagoMagazineTests */,
+				D5108D95D7F75B745CD0851676F9A49A /* Pods-MagoMagazineUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		90B520308C902D23E83FAF0C8E968EA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C8369B012BF0CA6B656DF32526BDD7 /* BWWalkthrough.bundle */,
+				7E4503F46D5F06ABF8644D950014F9D3 /* BWWalkthrough.framework */,
+				333AF54ABFAD760AF13C9AA9ACE3A73E /* Pods_MagoMagazine.framework */,
+				48FC3AF3136479FF6AC660FB61D33C71 /* Pods_MagoMagazineTests.framework */,
+				0B4698525915BE37724C889EBEFD1211 /* Pods_MagoMagazineUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95FB69FBDFBD51F0263885D19567E1D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3027F9C540FBE30128FB8DAB5C874135 /* BWWalkthrough.modulemap */,
+				DBD5032D3273BECC268E23A665FCD426 /* BWWalkthrough.xcconfig */,
+				22EAC2D8399F255A8808F61C12D06E8D /* BWWalkthrough-dummy.m */,
+				F9B640781281A1BBF7D201D681238552 /* BWWalkthrough-prefix.pch */,
+				50C1B374C412C3924696086319C0D947 /* BWWalkthrough-umbrella.h */,
+				9E6D8DD4376EB7FF9544FC04260A7400 /* Info.plist */,
+				A13F76ECD9542ADA3538AD827F8A226D /* ResourceBundle-BWWalkthrough-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BWWalkthrough";
+			sourceTree = "<group>";
+		};
+		AE54F8283227C0C559D01411AF4B13A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D01C0DEDFB092EDBEEA38E75FEC56420 /* BWWalkthrough */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D01C0DEDFB092EDBEEA38E75FEC56420 /* BWWalkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				7E97635252AB7F831B5EF1F888BB80F2 /* BWWalkthrough-BWWalkthrough-Bridging-Header.h */,
+				061741D1BB8EA3F896DF70343698499B /* BWWalkthroughPageViewController.swift */,
+				25D80379F6F6B619D685801E6302BDBA /* BWWalkthroughViewController.swift */,
+				95FB69FBDFBD51F0263885D19567E1D4 /* Support Files */,
+			);
+			path = BWWalkthrough;
+			sourceTree = "<group>";
+		};
+		D5108D95D7F75B745CD0851676F9A49A /* Pods-MagoMagazineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD7748D068DBE1131770E00694801CC /* Info.plist */,
+				B35AEECFC4E47A2B7CF51C54E6158787 /* Pods-MagoMagazineUITests.modulemap */,
+				AC52431C4DB3081951A181245B9FE212 /* Pods-MagoMagazineUITests-acknowledgements.markdown */,
+				5965316336DA4A87C6642217612A4A8A /* Pods-MagoMagazineUITests-acknowledgements.plist */,
+				A2C43AF153963054C81B82AC19A30BA9 /* Pods-MagoMagazineUITests-dummy.m */,
+				688735086A515B7D3FE1D4F733FEBEAC /* Pods-MagoMagazineUITests-frameworks.sh */,
+				9049597E4625B7F80F449A5C49947D01 /* Pods-MagoMagazineUITests-resources.sh */,
+				30B4996D5445A9B41E7B8F11FB1A357C /* Pods-MagoMagazineUITests-umbrella.h */,
+				F1A18AFFC5F2922ED76707AEB774B517 /* Pods-MagoMagazineUITests.debug.xcconfig */,
+				F7BE6AA7DFA2C3CDB17CE67EFE44B9E8 /* Pods-MagoMagazineUITests.release.xcconfig */,
+			);
+			name = "Pods-MagoMagazineUITests";
+			path = "Target Support Files/Pods-MagoMagazineUITests";
+			sourceTree = "<group>";
+		};
+		E73E1F3BBAA73B381FC63AB1BC624A2A /* Pods-MagoMagazine */ = {
+			isa = PBXGroup;
+			children = (
+				C9D695F8765A0FFDDFBB63D5A87B10A4 /* Info.plist */,
+				26388B9E74F46D7DBB93781AB110B8AA /* Pods-MagoMagazine.modulemap */,
+				C96DB773016AC069D5DA4C31D32A2784 /* Pods-MagoMagazine-acknowledgements.markdown */,
+				1E938F9A476D2BF14562E538AFE94E44 /* Pods-MagoMagazine-acknowledgements.plist */,
+				DD8B99AAFA2D2D4DEDCBCDD50665D56F /* Pods-MagoMagazine-dummy.m */,
+				01CDD34DA2BB3281669102EA8A71B18B /* Pods-MagoMagazine-frameworks.sh */,
+				86686D2236E192E17E2E2C9A7ADC0935 /* Pods-MagoMagazine-resources.sh */,
+				A2653A95B35F4AC334BDF8CF6C2A4493 /* Pods-MagoMagazine-umbrella.h */,
+				E4ABF7CF87D3057706EFB702DD6D5E8D /* Pods-MagoMagazine.debug.xcconfig */,
+				A34CBAEBD4A5C36A41469F759A7FB388 /* Pods-MagoMagazine.release.xcconfig */,
+			);
+			name = "Pods-MagoMagazine";
+			path = "Target Support Files/Pods-MagoMagazine";
+			sourceTree = "<group>";
+		};
+		F72E91A70EDC4AF35CF0B0833D1F0C7F /* Pods-MagoMagazineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F484B997B4EAC596859EB339BFA5506 /* Info.plist */,
+				AF8C43E1F5574DE5F0B88127872BD244 /* Pods-MagoMagazineTests.modulemap */,
+				6B7F71CA703658CED27E75EE42C97B37 /* Pods-MagoMagazineTests-acknowledgements.markdown */,
+				DB6C2AD3082396DBB7A484BAF715F724 /* Pods-MagoMagazineTests-acknowledgements.plist */,
+				88AE99C55BE14DE1CC5F5F1E00405169 /* Pods-MagoMagazineTests-dummy.m */,
+				6E75AEA4EEDD9A2F94E097A0CAE227FA /* Pods-MagoMagazineTests-frameworks.sh */,
+				FD89F704ADFB58CF843BFE330F3932E8 /* Pods-MagoMagazineTests-resources.sh */,
+				88729F6CCD2D44D861BFE137751EC4E0 /* Pods-MagoMagazineTests-umbrella.h */,
+				7A70BFC561A69A0998BEE423605124B3 /* Pods-MagoMagazineTests.debug.xcconfig */,
+				081D43A92BC974ACB69502ACE58F63BE /* Pods-MagoMagazineTests.release.xcconfig */,
+			);
+			name = "Pods-MagoMagazineTests";
+			path = "Target Support Files/Pods-MagoMagazineTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A276689D369723BEE18ADEC1526DB17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9952092D979EDDC543D588A969D459C /* Pods-MagoMagazineUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB3090F77A1B25714CC507125CEFD85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826E210AE97FB4FD8BC42B3E78A07704 /* Pods-MagoMagazine-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A935DB28E1BBD5FA827C4BAF7C360815 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CACB6DB20AF249AFE569694B8374D6 /* Pods-MagoMagazineTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C765142395124F2093D8B94C253794 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994EEB76829CAF89430CEBC248C0D94B /* BWWalkthrough-BWWalkthrough-Bridging-Header.h in Headers */,
+				E3ABF6A7E1F3BD40EA89029B9583CE36 /* BWWalkthrough-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0691587554E66BE810B66ADAD184590E /* Pods-MagoMagazine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B249E4846E5F6872D0B2F12DDB4E3C9C /* Build configuration list for PBXNativeTarget "Pods-MagoMagazine" */;
+			buildPhases = (
+				DA2675BA85300AFCD75FA149CB960098 /* Sources */,
+				1F1140D524077128ACE9C996ACEAAE6C /* Frameworks */,
+				5CB3090F77A1B25714CC507125CEFD85 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20DC5C946CA30D1FABCC7ED31CC2F85B /* PBXTargetDependency */,
+			);
+			name = "Pods-MagoMagazine";
+			productName = "Pods-MagoMagazine";
+			productReference = 333AF54ABFAD760AF13C9AA9ACE3A73E /* Pods_MagoMagazine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17664F8F0232329D875EC690EB653867 /* BWWalkthrough */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A639503FAD904A4C0560BFD21A4AC533 /* Build configuration list for PBXNativeTarget "BWWalkthrough" */;
+			buildPhases = (
+				FD5F0ECA9C77D6296EDA013360EF40F6 /* Sources */,
+				1F2DA83DF387250AE6297F7FE08B1038 /* Frameworks */,
+				1C94656C2686843D9CB039F0A4AA4DFE /* Resources */,
+				F2C765142395124F2093D8B94C253794 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63600B2DD48DB00968374FB919F9FB4E /* PBXTargetDependency */,
+			);
+			name = BWWalkthrough;
+			productName = BWWalkthrough;
+			productReference = 7E4503F46D5F06ABF8644D950014F9D3 /* BWWalkthrough.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30C7A2A2D4BBCA56C29754A7F2423D8D /* Pods-MagoMagazineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D49DC52305E8B697FA60E06FCF192FE /* Build configuration list for PBXNativeTarget "Pods-MagoMagazineTests" */;
+			buildPhases = (
+				3BF17A449AD4AE1C79597ACBCC1F77B3 /* Sources */,
+				2682A6280EF9E38840917B1CB30B366E /* Frameworks */,
+				A935DB28E1BBD5FA827C4BAF7C360815 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MagoMagazineTests";
+			productName = "Pods-MagoMagazineTests";
+			productReference = 48FC3AF3136479FF6AC660FB61D33C71 /* Pods_MagoMagazineTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A371D9F716AF507FF01A593DD0D9DFDF /* BWWalkthrough-BWWalkthrough */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07D9626E86B5AD00B8666EAC0256D73 /* Build configuration list for PBXNativeTarget "BWWalkthrough-BWWalkthrough" */;
+			buildPhases = (
+				54EA438B6EE7DA675F154065FA3B8F0C /* Sources */,
+				E9E16A6CE53F5C4E400769AFDB64471C /* Frameworks */,
+				CD580337CCBD015067CC162342EA52E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BWWalkthrough-BWWalkthrough";
+			productName = "BWWalkthrough-BWWalkthrough";
+			productReference = 81C8369B012BF0CA6B656DF32526BDD7 /* BWWalkthrough.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DD3287B7CCD9BB79E0CCB0C0403522BA /* Pods-MagoMagazineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9EC455AB4411D576B6705451FD7F2F1 /* Build configuration list for PBXNativeTarget "Pods-MagoMagazineUITests" */;
+			buildPhases = (
+				BCFEDFF37E697DC7C22446E388C18431 /* Sources */,
+				9B26E5BDCC3223D9A14A6D0A6F3F0DAA /* Frameworks */,
+				3A276689D369723BEE18ADEC1526DB17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MagoMagazineUITests";
+			productName = "Pods-MagoMagazineUITests";
+			productReference = 0B4698525915BE37724C889EBEFD1211 /* Pods_MagoMagazineUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 90B520308C902D23E83FAF0C8E968EA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17664F8F0232329D875EC690EB653867 /* BWWalkthrough */,
+				A371D9F716AF507FF01A593DD0D9DFDF /* BWWalkthrough-BWWalkthrough */,
+				0691587554E66BE810B66ADAD184590E /* Pods-MagoMagazine */,
+				30C7A2A2D4BBCA56C29754A7F2423D8D /* Pods-MagoMagazineTests */,
+				DD3287B7CCD9BB79E0CCB0C0403522BA /* Pods-MagoMagazineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C94656C2686843D9CB039F0A4AA4DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDFC7B3F6D3C2BAA090F9F02786BCD2 /* BWWalkthrough.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD580337CCBD015067CC162342EA52E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BF17A449AD4AE1C79597ACBCC1F77B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0272F81DF846D036B757AE4B8DE5E2EC /* Pods-MagoMagazineTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54EA438B6EE7DA675F154065FA3B8F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFEDFF37E697DC7C22446E388C18431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E8CAFE9F5926AEAEE8107C55385390 /* Pods-MagoMagazineUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2675BA85300AFCD75FA149CB960098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8D916BD49D853E1BF8CB1EFF56F457 /* Pods-MagoMagazine-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5F0ECA9C77D6296EDA013360EF40F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66BCF0D70A62711A521E9E4C7BE9728 /* BWWalkthrough-dummy.m in Sources */,
+				9C0D48DB3AE3B827183BBACDB01E79DD /* BWWalkthroughPageViewController.swift in Sources */,
+				40C827ABDB3F3436BBC0671B2519F025 /* BWWalkthroughViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20DC5C946CA30D1FABCC7ED31CC2F85B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BWWalkthrough;
+			target = 17664F8F0232329D875EC690EB653867 /* BWWalkthrough */;
+			targetProxy = 874FA2472AA772D9288347F367F40F43 /* PBXContainerItemProxy */;
+		};
+		63600B2DD48DB00968374FB919F9FB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BWWalkthrough-BWWalkthrough";
+			target = A371D9F716AF507FF01A593DD0D9DFDF /* BWWalkthrough-BWWalkthrough */;
+			targetProxy = CADC63AC3073D6C741B22A96D34AA490 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00FCCCB31B96BECE18C8465386D3AFB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD5032D3273BECC268E23A665FCD426 /* BWWalkthrough.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BWWalkthrough/BWWalkthrough-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BWWalkthrough/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BWWalkthrough/BWWalkthrough.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BWWalkthrough;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		01955CEE25E84012FBE4DAE75BE57909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A34CBAEBD4A5C36A41469F759A7FB388 /* Pods-MagoMagazine.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MagoMagazine/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagoMagazine/Pods-MagoMagazine.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MagoMagazine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D1A7FE8A80473ADDFB0E0DC87181F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BE6AA7DFA2C3CDB17CE67EFE44B9E8 /* Pods-MagoMagazineUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MagoMagazineUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagoMagazineUITests/Pods-MagoMagazineUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MagoMagazineUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E7282B255E05760A99540F0D033DAF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4ABF7CF87D3057706EFB702DD6D5E8D /* Pods-MagoMagazine.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MagoMagazine/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagoMagazine/Pods-MagoMagazine.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MagoMagazine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		508C5D91F8224763A72CC2D11EC5217E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A18AFFC5F2922ED76707AEB774B517 /* Pods-MagoMagazineUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MagoMagazineUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagoMagazineUITests/Pods-MagoMagazineUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MagoMagazineUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		681D9E1585C5D3BC00EF3C038019381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081D43A92BC974ACB69502ACE58F63BE /* Pods-MagoMagazineTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MagoMagazineTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagoMagazineTests/Pods-MagoMagazineTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MagoMagazineTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707DF1BB0EE0008987B541411100D52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD5032D3273BECC268E23A665FCD426 /* BWWalkthrough.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BWWalkthrough";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/BWWalkthrough/ResourceBundle-BWWalkthrough-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = BWWalkthrough;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		91377FB6753CA31A80A7AFBCE79DBF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD5032D3273BECC268E23A665FCD426 /* BWWalkthrough.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BWWalkthrough/BWWalkthrough-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BWWalkthrough/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BWWalkthrough/BWWalkthrough.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BWWalkthrough;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B36AEC1F858C43146C9D70FBE5E55A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A70BFC561A69A0998BEE423605124B3 /* Pods-MagoMagazineTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MagoMagazineTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MagoMagazineTests/Pods-MagoMagazineTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MagoMagazineTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2F79924C33C03137FDDE2E5D848461B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD5032D3273BECC268E23A665FCD426 /* BWWalkthrough.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BWWalkthrough";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/BWWalkthrough/ResourceBundle-BWWalkthrough-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = BWWalkthrough;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D49DC52305E8B697FA60E06FCF192FE /* Build configuration list for PBXNativeTarget "Pods-MagoMagazineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36AEC1F858C43146C9D70FBE5E55A93 /* Debug */,
+				681D9E1585C5D3BC00EF3C038019381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A639503FAD904A4C0560BFD21A4AC533 /* Build configuration list for PBXNativeTarget "BWWalkthrough" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91377FB6753CA31A80A7AFBCE79DBF78 /* Debug */,
+				00FCCCB31B96BECE18C8465386D3AFB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07D9626E86B5AD00B8666EAC0256D73 /* Build configuration list for PBXNativeTarget "BWWalkthrough-BWWalkthrough" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707DF1BB0EE0008987B541411100D52F /* Debug */,
+				E2F79924C33C03137FDDE2E5D848461B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B249E4846E5F6872D0B2F12DDB4E3C9C /* Build configuration list for PBXNativeTarget "Pods-MagoMagazine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7282B255E05760A99540F0D033DAF0 /* Debug */,
+				01955CEE25E84012FBE4DAE75BE57909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9EC455AB4411D576B6705451FD7F2F1 /* Build configuration list for PBXNativeTarget "Pods-MagoMagazineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508C5D91F8224763A72CC2D11EC5217E /* Debug */,
+				3D1A7FE8A80473ADDFB0E0DC87181F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
