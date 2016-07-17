@@ -105,6 +105,8 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
         // UIボタンをViewに追加.
         self.view.addSubview(nextBtn)
         
+        ReadJsonData().readJson()
+        
     }
     
     // ボタンイベント.
