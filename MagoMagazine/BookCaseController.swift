@@ -54,8 +54,7 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
         let cellImage = UIImage(named: magazines[indexPath.row])
         cell.setTitle("本日は晴天なり")
         cell.setBack(cellImage!)
-        //cell.setImage(UIImage(named: "magazine")!)
-        cell.setImage(UIImage(getImg("http://kabegami.org/wp-content/uploads/2012/07/0IKPd4.jpg", imageView: cell.bookBack)))
+        cell.setImage(UIImage(named: "magazine")!) //<-  ここに外部のURLの画像を流し込む        
         cells.append(cell)
         return cell
     }
@@ -110,28 +109,6 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func getImg(imgUrl: String, imageView :UIImageView){
-        print("本日は眠いなり")
-        
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-            var img :UIImage = UIImage()
-            // Backgroundで実行
-            let url = NSURL(string:imgUrl)
-            let req = NSURLRequest(URL:url!)
-
-            NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
-                img = UIImage(data:data!)!
-            }
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                print("僕ドラえもん")
-                //imageView.image = img
-                imageView.image = UIImage(named: "magazine")!
-            })
-        })
-    }
-    
+    }        
 }
 

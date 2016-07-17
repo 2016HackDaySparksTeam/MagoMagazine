@@ -9,7 +9,6 @@
 import Foundation
 
 class Book {
-    
     let magazineTitle :String = ""
     let magazineImage :String = ""
     let year :Int = 0
@@ -25,5 +24,4 @@ class Book {
     let text :String = ""
     let url :String = ""
     let caption :String = ""
-    
 }
