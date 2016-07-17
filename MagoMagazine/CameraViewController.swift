@@ -32,6 +32,12 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     let image:UIImage = UIImage(named:"head.png")!
     let imageview = UIImageView()
     
+    let image2:UIImage = UIImage(named:"bottun_changeview.png")!
+    
+    let whiteLabel = UILabel()
+    
+    let secondview = MagazineCollectionViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,8 +70,14 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
             mySession.startRunning()
         }
         
+        //
+        whiteLabel.frame = CGRectMake(0, 0, self.view.bounds.width, 50)
+        whiteLabel.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(whiteLabel)
+        
+        //
         imageview.image = image
-        imageview.frame = CGRectMake(0, 0, self.view.bounds.width, 35)
+        imageview.frame = CGRectMake(0, 20, self.view.bounds.width, 35)
         self.view.addSubview(imageview)
         
         myButton.backgroundColor = UIColor.redColor();
@@ -84,9 +96,10 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
         changeButton.layer.position = CGPoint(x: self.view.bounds.width-30, y:50)
         changeButton.addTarget(self, action: #selector(CameraViewController.onClickChangeButton(_:)), forControlEvents: .TouchUpInside)
         // UIボタンをViewに追加.
-        self.view.addSubview(changeButton)
+        //self.view.addSubview(changeButton)
         
-        nextBtn.backgroundColor = UIColor.blueColor();
+        nextBtn.setImage(image2, forState: UIControlState.Normal)
+        //nextBtn.backgroundColor = UIColor.blueColor();
         nextBtn.layer.position = CGPoint(x: self.view.bounds.width-50, y:self.view.bounds.height-50)
         nextBtn.addTarget(self, action: #selector(CameraViewController.onChangeViewButton(_:)), forControlEvents: .TouchUpInside)
         // UIボタンをViewに追加.
@@ -115,7 +128,8 @@ class CameraViewController: UIViewController, NSURLSessionTaskDelegate{
     }
     
     func onChangeViewButton(sender: UIButton) {
-        performSegueWithIdentifier("change", sender: self)
+        secondview.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        self.presentViewController(secondview, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
