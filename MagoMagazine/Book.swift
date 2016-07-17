@@ -10,8 +10,20 @@ import Foundation
 
 class Book {
     
-    var cover:NSDictionary = [:]
-    var summary:NSDictionary = [:]
-    var contents:NSDictionary = [:]
+    let magazineTitle :String = ""
+    let magazineImage :String = ""
+    let year :Int = 0
+    let month :Int = 0
+    let week :Int = 0
+    let magazineColor :String = ""
+    let joy :String = ""
+    let sorrow :String = ""
+    let anger :String = ""
+    let surprise :String = ""
+    let other :String = ""
+    let templateNo :Int = 0
+    let text :String = ""
+    let url :String = ""
+    let caption :String = ""
     
 }
