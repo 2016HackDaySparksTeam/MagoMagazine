@@ -11,6 +11,7 @@ import UIKit
 class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollectionViewDataSource, UICollectionViewDelegate{
     var bookWidth :CGFloat = 200.0
     var bookHeight :CGFloat = 300.0
+    var cells :[CustomBook] = []
     let lineBooks = 4
     let magazines = ["book_blue","book_green","book_orange","book_pink","book_yellow","book_green","book_orange","book_pink","book_yellow","book_green","book_orange","book_pink"]
     
@@ -49,12 +50,13 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
-        let cell:UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
-        let imageView = cell.contentView.viewWithTag(1) as! UIImageView
+        let cell:CustomBook = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CustomBook
         let cellImage = UIImage(named: magazines[indexPath.row])
-        imageView.image = cellImage
-        let label = cell.contentView.viewWithTag(2) as! UILabel
-        label.text = magazines[indexPath.row]
+        cell.setTitle("本日は晴天なり")
+        cell.setBack(cellImage!)
+        //cell.setImage(UIImage(named: "magazine")!)
+        cell.setImage(UIImage(getImg("http://kabegami.org/wp-content/uploads/2012/07/0IKPd4.jpg", imageView: cell.bookBack)))
+        cells.append(cell)
         return cell
     }
     
@@ -65,9 +67,19 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
     
     // Cell が選択されたときの処理
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath)
+        let beforeX = self.cells[indexPath.row].center.x
+        let beforeY = self.cells[indexPath.row].center.y
+        
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.cells[indexPath.row].center.x = self.cells[indexPath.row].center.x + 10
+            self.cells[indexPath.row].center.y = self.cells[indexPath.row].center.y - 10
+            }, completion: {(Bool) -> Void in
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.cells[indexPath.row].center.x = self.cells[indexPath.row].center.x - 10
+                    self.cells[indexPath.row].center.y = self.cells[indexPath.row].center.y + 10
+                })
+        })
     }
-    
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -79,9 +91,7 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
     
     /// アイテムごとのマージン
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, maxLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        print ("mergin")
         return 0.0
-        
     }
     
     func addDaiza(x: CGFloat, y: CGFloat){
@@ -101,5 +111,27 @@ class BookCaseController: UIViewController, NSURLSessionTaskDelegate, UICollecti
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getImg(imgUrl: String, imageView :UIImageView){
+        print("本日は眠いなり")
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+            var img :UIImage = UIImage()
+            // Backgroundで実行
+            let url = NSURL(string:imgUrl)
+            let req = NSURLRequest(URL:url!)
+
+            NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
+                img = UIImage(data:data!)!
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                print("僕ドラえもん")
+                //imageView.image = img
+                imageView.image = UIImage(named: "magazine")!
+            })
+        })
+    }
+    
 }
 

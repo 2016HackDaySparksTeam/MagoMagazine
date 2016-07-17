@@ -28,32 +28,48 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" reuseIdentifier="Cell" id="i4P-Um-MBi">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" reuseIdentifier="Cell" id="i4P-Um-MBi" customClass="CustomBook" customModule="MagoMagazine" customModuleProvider="target">
                                         <rect key="frame" x="39.5" y="0.0" width="121" height="161"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="121" height="161"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1M-cm-AY0">
-                                                    <rect key="frame" x="39" y="70" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magazine" translatesAutoresizingMaskIntoConstraints="NO" id="34t-W6-pD0">
                                                     <rect key="frame" x="8" y="8" width="105" height="145"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1M-cm-AY0">
+                                                    <rect key="frame" x="8" y="28" width="105" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="e1M-cm-AY0" firstAttribute="leading" secondItem="i4P-Um-MBi" secondAttribute="leadingMargin" id="1Qh-lA-jTs"/>
+                                            <constraint firstItem="e1M-cm-AY0" firstAttribute="leading" secondItem="i4P-Um-MBi" secondAttribute="leadingMargin" id="AAt-gw-xgc"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="34t-W6-pD0" secondAttribute="trailing" id="EZc-25-hcE"/>
                                             <constraint firstItem="34t-W6-pD0" firstAttribute="leading" secondItem="i4P-Um-MBi" secondAttribute="leadingMargin" id="IbT-38-h9S"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="34t-W6-pD0" secondAttribute="bottom" id="K7D-jE-y2L"/>
                                             <constraint firstItem="34t-W6-pD0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" id="LVf-cx-sNM"/>
+                                            <constraint firstItem="e1M-cm-AY0" firstAttribute="trailing" secondItem="i4P-Um-MBi" secondAttribute="trailingMargin" id="WRK-d6-CIx"/>
+                                            <constraint firstItem="e1M-cm-AY0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" constant="20" id="h8i-3C-fL5"/>
+                                            <constraint firstItem="e1M-cm-AY0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" constant="50" id="hFD-Tp-6LE"/>
+                                            <constraint firstItem="e1M-cm-AY0" firstAttribute="trailing" secondItem="i4P-Um-MBi" secondAttribute="trailingMargin" id="j4H-Xv-iem"/>
+                                            <constraint firstItem="e1M-cm-AY0" firstAttribute="top" secondItem="i4P-Um-MBi" secondAttribute="topMargin" constant="20" id="ldN-p7-ETu"/>
                                         </constraints>
                                         <size key="customSize" width="121" height="161"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="h8i-3C-fL5"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="bookBack" destination="34t-W6-pD0" id="UsA-mc-MG7"/>
+                                            <outlet property="bookTitle" destination="e1M-cm-AY0" id="Ygk-yb-Cap"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
